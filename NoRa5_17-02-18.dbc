@@ -689,161 +689,186 @@ BO_ 1281 BMS_Voltages: 7 AMS
 
 BO_ 1280 BMS_Temps: 7 AMS
 
-
-
-
+ SG_ Temp_Cell_288 m95 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_287 m95 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_286 m95 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_285 m94 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_284 m94 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_283 m94 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_282 m93 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_281 m93 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_280 m93 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_279 m92 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_278 m92 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_277 m92 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_276 m91 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_275 m91 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_274 m91 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_273 m90 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_272 m90 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_271 m90 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_270 m89 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_269 m89 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_268 m89 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_267 m88 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_266 m88 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_265 m88 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_264 m87 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_263 m87 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_262 m87 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_261 m86 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_260 m86 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_259 m86 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_258 m85 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_257 m85 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_256 m85 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_255 m84 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_254 m84 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_253 m84 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_252 m83 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_251 m83 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_250 m83 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_249 m82 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_248 m82 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_247 m82 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_246 m81 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_245 m81 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_244 m81 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_243 m80 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_242 m80 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_241 m80 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_240 m79 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_239 m79 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_238 m79 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_237 m78 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_236 m78 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_235 m78 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_234 m77 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_233 m77 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_232 m77 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_231 m76 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_230 m76 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_229 m76 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_228 m75 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_227 m75 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_226 m75 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_225 m74 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_224 m74 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_223 m74 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_222 m73 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_221 m73 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_220 m73 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_219 m72 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_218 m72 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_217 m72 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_216 m71 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_215 m71 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_214 m71 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_213 m70 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_212 m70 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_211 m70 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_210 m69 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_209 m69 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_208 m69 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_207 m68 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_206 m68 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_205 m68 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_204 m67 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_203 m67 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_202 m67 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_201 m66 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_200 m66 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_199 m66 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_198 m65 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_197 m65 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_196 m65 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_195 m64 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_194 m64 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_193 m64 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_192 m63 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_191 m63 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_190 m63 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_189 m62 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_188 m62 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_187 m62 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_186 m61 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_185 m61 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_184 m61 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_183 m60 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_182 m60 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_181 m60 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_180 m59 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_179 m59 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_178 m59 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_177 m58 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_176 m58 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_175 m58 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_174 m57 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_173 m57 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_172 m57 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_171 m56 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_170 m56 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_169 m56 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_168 m55 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_167 m55 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_166 m55 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_165 m54 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_164 m54 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_163 m54 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_162 m53 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_161 m53 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_160 m53 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_159 m52 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_158 m52 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_157 m52 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_156 m51 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_155 m51 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_154 m51 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_153 m50 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_152 m50 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_151 m50 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_150 m49 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_149 m49 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_148 m49 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_147 m48 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_146 m48 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_145 m48 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_144 m47 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_143 m47 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_142 m47 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_141 m46 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_140 m46 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_139 m46 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_138 m45 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_137 m45 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_136 m45 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_135 m44 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_134 m44 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_133 m44 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_132 m43 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_131 m43 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_130 m43 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_129 m42 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_128 m42 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_127 m42 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_126 m41 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_125 m41 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_124 m41 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_123 m40 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_122 m40 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_121 m40 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_120 m39 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_119 m39 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_118 m39 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_117 m38 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_116 m38 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_115 m38 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_114 m37 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_113 m37 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_112 m37 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_111 m36 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_110 m36 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_109 m36 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
-
  SG_ Temp_Cell_108 m35 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_107 m35 : 31|16@0+ (1,0) [0|65535] "°C" Vector__XXX
  SG_ Temp_Cell_106 m35 : 15|16@0+ (1,0) [0|65535] "°C" Vector__XXX
