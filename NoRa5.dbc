@@ -37,12 +37,6 @@ BU_: Reserve2 SS_WT4 SS_WT3 SS_WT2 SS_WT1 SS_WP2 SS_WP1 SS_WF SS_SA SS_RTDS SS_D
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
-BO_ 561 VCU_Alive: 1 VCU
- SG_ VCU_Alive_Signal : 7|1@0+ (1,0) [0|0] ""  AMS
-
-BO_ 514 AMS_Alive: 4 AMS
- SG_ AMS_Alive_Counter : 7|32@0+ (1,0) [0|0] ""  VCU
-
 BO_ 512 AMS_Status: 5 AMS
  SG_ Cell_OV_288 m23 : 39|1@0+ (1,0) [0|0] ""  VCU
  SG_ Cell_UV_288 m23 : 38|1@0+ (1,0) [0|0] ""  VCU
@@ -629,16 +623,67 @@ BO_ 512 AMS_Status: 5 AMS
  SG_ Multiplexor_AMS_Status M : 15|8@0+ (1,0) [0|255] ""  VCU
  SG_ Global_Enable_Flag : 7|1@0+ (1,0) [0|1] ""  VCU
 
+BO_ 514 AMS_Alive: 4 AMS
+ SG_ AMS_Alive_Counter : 7|32@0+ (1,0) [0|0] ""  VCU
+
+BO_ 515 AMS_Safety: 2 AMS
+ SG_ Safety_Circuit : 0|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_BRAKE_PLAUSIBLE : 1|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PO_AIR_ENABLE : 2|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_TSAL : 3|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_P_ABOVE_5KW : 4|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_HW_AIR_OFF : 5|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_BRAKE_PRESSURE : 6|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_IMD_MEMORY : 7|1@0+ (1,0) [0|0] ""  VCU
+
+BO_ 517 AMS_Options: 1 AMS
+ SG_ Option_7 : 0|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_6 : 1|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_5 : 2|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_4 : 3|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_3 : 4|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_2 : 5|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_1 : 6|1@0+ (1,0) [0|0] ""  VCU
+ SG_ Option_0 : 7|1@0+ (1,0) [0|0] ""  VCU
+
+BO_ 561 VCU_Alive: 1 VCU
+ SG_ VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  AMS
+
+BO_ 656 TorqueAndBreak: 2 PIC
+ SG_ BreakPressure : 15|8@0+ (0.39216,0) [0|100.0008] ""  VCU
+ SG_ Torque : 7|8@0+ (0.39216,0) [0|100.0008] ""  VCU
+
+BO_ 800 SS_SetBrakeLight: 1 VCU
+ SG_ BrakeLight_ON : 0|1@0+ (1,0) [0|0] ""  SS_BL
+
+BO_ 801 SS_Deflection_FL: 2 SS_DFL
+ SG_ DeflectionFrontLeft : 0|16@1- (1,0) [0|0] ""  VCU
+
+BO_ 802 SS_Deflection_FR: 2 SS_DFR
+ SG_ DeflectionFrontRight : 0|16@1- (1,0) [0|0] ""  VCU
+
+BO_ 803 SS_Deflection_BL: 2 SS_DBL
+ SG_ DeflectionBackLeft : 0|16@1- (1,0) [0|0] ""  VCU
+
+BO_ 804 SS_Deflection_BR: 2 SS_DBR
+ SG_ DeflectionBackRight : 0|16@1- (1,0) [0|0] ""  VCU
+
+BO_ 805 SS_SteeringAngle: 2 SteeringWheel
+ SG_ SteeringAngle : 0|16@1- (1,0) [-32768|32767] ""  VCU
+
+BO_ 806 SS_SetRTDS: 1 VCU
+ SG_ RTDS_ON : 0|1@0+ (1,0) [0|0] ""  SS_RTDS
 
 
-CM_ BU_ SS_WT4 "SmartSensor Water Temperatur 4";
-CM_ BU_ SS_WT3 "SmartSensor Water Temperatur 3";
-CM_ BU_ SS_WT2 "SmartSensor Water Temperatur 2";
-CM_ BU_ SS_WT1 "SmartSensor Water Temperatur 1";
+
+CM_ BU_ SS_WT4 "SmartSensor Water Temperature 4";
+CM_ BU_ SS_WT3 "SmartSensor Water Temperature 3";
+CM_ BU_ SS_WT2 "SmartSensor Water Temperature 2";
+CM_ BU_ SS_WT1 "SmartSensor Water Temperature 1";
 CM_ BU_ SS_WP2 "SmartSensor Water Pump 2";
 CM_ BU_ SS_WP1 "SmartSensor Water Pump 1";
 CM_ BU_ SS_WF "SmartSensor Water Flow";
-CM_ BU_ SS_SA "SmartSensor steering angles";
+CM_ BU_ SS_SA "SmartSensor steering angle";
 CM_ BU_ SS_RTDS "SmartSensor ready to drive sound";
 CM_ BU_ SS_DFR "SmartSensor Deflection Front Right";
 CM_ BU_ SS_DFL "SmartSensor Deflection Front Left";
@@ -646,7 +691,7 @@ CM_ BU_ SS_DBR "Smart Sensor Deflection Back Right";
 CM_ BU_ SS_DBL "SmartSensor Deflection Back Left";
 CM_ BU_ User "extern developer eg. with CANoe";
 CM_ BU_ SS_BL "SmartSensor Brake Light";
-CM_ BU_ PIC "Pedalerie Platine";
+CM_ BU_ PIC "Pedalerie Platine (IC - integrated circuit)";
 CM_ BU_ ISA_Scale "ISA Scale - Stromsensor";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";
