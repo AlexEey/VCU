@@ -1,0 +1,117 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Reserve2 SS_WT4 SS_WT3 SS_WT2 SS_WT1 SS_WP2 SS_WP1 SS_WF SS_SA SS_RTDS SS_DFR SS_DFL SS_DBR SS_DBL VCU User Reserve1 Telemetry SteeringWheel SS_BL SmartSensor PIC ISA_Scale Distri Dashboard AMS AclrGPS
+VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
+
+
+BO_ 561 VCU_Alive: 1 VCU
+ SG_ VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  AMS
+
+BO_ 562 VCU_Cmd_AmsOptions1: 1 VCU
+ SG_ HVFan_ON : 0|1@0+ (1,0) [0|0] ""  AMS
+
+BO_ 656 TorqueAndBreak: 2 PIC
+ SG_ BreakPressure : 15|8@0+ (0.39216,0) [0|100.0008] ""  VCU
+ SG_ Torque : 7|8@0+ (0.39216,0) [0|100.0008] ""  VCU
+
+BO_ 800 SS_CMD_BrakeLight: 1 VCU
+ SG_ BrakeLight_ON : 0|1@0+ (1,0) [0|0] ""  SS_BL
+
+BO_ 801 SS_CMD_RTDS: 1 VCU
+ SG_ RTDS_ON : 0|1@0+ (1,0) [0|0] ""  SS_RTDS
+
+BO_ 802 SS_CMD_WaterPump1: 1 VCU
+ SG_ WaterPump1_ON : 0|1@0+ (1,0) [0|0] ""  SS_WP1
+
+BO_ 803 SS_CMD_WaterPump2: 1 VCU
+ SG_ WaterPump2_ON : 0|1@0+ (1,0) [0|0] ""  SS_WP2
+
+BO_ 848 SS_Deflection_FL: 2 SS_DFL
+ SG_ DeflectionFrontLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
+
+BO_ 849 SS_Deflection_FR: 2 SS_DFR
+ SG_ DeflectionFrontRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
+
+BO_ 850 SS_Deflection_BL: 2 SS_DBL
+ SG_ DeflectionBackLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
+
+BO_ 851 SS_Deflection_BR: 2 SS_DBR
+ SG_ DeflectionBackRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
+
+BO_ 852 SS_SteeringAngle: 2 SteeringWheel
+ SG_ SteeringAngle : 0|16@1- (1,0) [-32768|32767] ""  VCU
+
+BO_ 864 SS_WaterTemp1: 1 SS_WT1
+ SG_ TemperatureWater1 : 7|8@0+ (1,0) [0|255] ""  VCU
+
+BO_ 865 SS_WaterTemp2: 1 SS_WT2
+ SG_ TemperatureWater2 : 7|8@0+ (1,0) [0|255] ""  VCU
+
+BO_ 866 SS_WaterTemp3: 1 SS_WT3
+ SG_ TemperatureWater3 : 7|8@0+ (1,0) [0|255] ""  VCU
+
+BO_ 867 SS_WaterTemp4: 1 SS_WT4
+ SG_ TemperatureWater4 : 7|8@0+ (1,0) [0|255] ""  VCU
+
+BO_ 868 SS_WaterPump1: 1 SS_WP1
+ SG_ WaterPump1_State : 0|1@0+ (1,0) [0|0] ""  VCU
+
+BO_ 869 SS_WaterPump2: 1 SS_WP2
+ SG_ WaterPump2_State : 0|1@0+ (1,0) [0|0] ""  VCU
+
+
+
+CM_ BU_ SS_WT4 "SmartSensor Water Temperature 4";
+CM_ BU_ SS_WT3 "SmartSensor Water Temperature 3";
+CM_ BU_ SS_WT2 "SmartSensor Water Temperature 2";
+CM_ BU_ SS_WT1 "SmartSensor Water Temperature 1";
+CM_ BU_ SS_WP2 "SmartSensor Water Pump 2";
+CM_ BU_ SS_WP1 "SmartSensor Water Pump 1";
+CM_ BU_ SS_WF "SmartSensor Water Flow";
+CM_ BU_ SS_SA "SmartSensor steering angle";
+CM_ BU_ SS_RTDS "SmartSensor ready to drive sound";
+CM_ BU_ SS_DFR "SmartSensor Deflection Front Right";
+CM_ BU_ SS_DFL "SmartSensor Deflection Front Left";
+CM_ BU_ SS_DBR "Smart Sensor Deflection Back Right";
+CM_ BU_ SS_DBL "SmartSensor Deflection Back Left";
+CM_ BU_ User "extern developer eg. with CANoe";
+CM_ BU_ SS_BL "SmartSensor Brake Light";
+CM_ BU_ PIC "Pedalerie Platine (IC - integrated circuit)";
+CM_ BU_ ISA_Scale "ISA Scale - Stromsensor";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "";
+VAL_ 561 VCU_Alive_Signal 1 "ONLINE" 0 "OFFLINE" ;
+

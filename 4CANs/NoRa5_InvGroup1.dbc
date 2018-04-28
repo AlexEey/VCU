@@ -1,0 +1,177 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: AMK_INV_3 AMK_INV_4 VCU
+
+
+BO_ 647 INV4_ActVal2: 8 AMK_INV_4
+ SG_ INV4_ActVal2_AMK_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV4_ActVal2_AMK_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV4_ActVal2_AMK_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV4_ActVal2_AMK_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
+
+BO_ 645 INV4_ActVal1: 8 AMK_INV_4
+ SG_ INV4_ActVal1_AMK_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
+ SG_ INV4_ActVal1_AMK_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  VCU
+ SG_ INV4_ActVal1_AMK_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bSystemReady : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bReserve : 0|8@1- (1,0) [0|0] ""  VCU
+ SG_ INV4_ActVal1_AMK_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bInverterOn : 14|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bError : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bDerating : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV4_ActVal1_AMK_bDcOn : 12|1@1+ (1,0) [0|0] ""  VCU
+ SG_ INV4_ActVal1_AMK_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  VCU
+
+BO_ 390 INV4_SetVal1: 8 VCU
+ SG_ INV4_SetVal1_AMK_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bReserve1 : 12|4@1+ (1,0) [0|0] ""  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bReserve0 : 0|8@1+ (1,0) [0|0] ""  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bInverterOn : 8|1@1+ (1,0) [0|0] ""  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bErrorReset : 11|1@1+ (1,0) [0|0] ""  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bEnable : 10|1@1+ (1,0) [0|0] ""  AMK_INV_4
+ SG_ INV4_SetVal1_AMK_bDcOn : 9|1@1+ (1,0) [0|0] ""  AMK_INV_4
+
+BO_ 389 INV3_SetVal1: 8 VCU
+ SG_ INV3_SetVal1_AMK_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bReserve1 : 12|4@1+ (1,0) [0|0] ""  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bReserve0 : 0|8@1+ (1,0) [0|0] ""  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bInverterOn : 8|1@1+ (1,0) [0|0] ""  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bErrorReset : 11|1@1+ (1,0) [0|0] ""  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bEnable : 10|1@1+ (1,0) [0|0] ""  AMK_INV_3
+ SG_ INV3_SetVal1_AMK_bDcOn : 9|1@1+ (1,0) [0|0] ""  AMK_INV_3
+
+BO_ 646 INV3_ActVal2: 8 AMK_INV_3
+ SG_ INV3_ActVal2_AMK_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV3_ActVal2_AMK_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV3_ActVal2_AMK_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  VCU
+ SG_ INV3_ActVal2_AMK_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
+
+BO_ 644 INV3_ActVal1: 8 AMK_INV_3
+ SG_ INV3_ActVal1_AMK_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
+ SG_ INV3_ActVal1_AMK_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  VCU
+ SG_ INV3_ActVal1_AMK_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bSystemReady : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bReserve : 0|8@1- (1,0) [0|0] ""  VCU
+ SG_ INV3_ActVal1_AMK_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bInverterOn : 14|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bError : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bDerating : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ INV3_ActVal1_AMK_bDcOn : 12|1@1+ (1,0) [0|0] ""  VCU
+ SG_ INV3_ActVal1_AMK_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  VCU
+
+
+
+CM_ "19.02.18 Michaela G: 
+Erstellung 
+
+04.03.18 Alexey T: 
+Steuergeräte VCU und AMK_INV wurden hinzugefügt, Tx Botschaften zu Geräten zugewiesen";
+CM_ SG_ 647 INV4_ActVal2_AMK_TempMotor "Motortemperatur";
+CM_ SG_ 647 INV4_ActVal2_AMK_TempInverter "Coldplate-Temperatur";
+CM_ SG_ 647 INV4_ActVal2_AMK_TempIGBT "IGBT Temperatur";
+CM_ SG_ 647 INV4_ActVal2_AMK_ErrorInfo "Diagnosenummer";
+CM_ SG_ 645 INV4_ActVal1_AMK_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 645 INV4_ActVal1_AMK_MagnetizingCurr "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 645 INV4_ActVal1_AMK_bWarn "Warnung";
+CM_ SG_ 645 INV4_ActVal1_AMK_bSystemReady "System bereit (SBM)";
+CM_ SG_ 645 INV4_ActVal1_AMK_bReserve "Reserviert";
+CM_ SG_ 645 INV4_ActVal1_AMK_bQuitInverterOn "Quittierung Reglerfreigabe";
+CM_ SG_ 645 INV4_ActVal1_AMK_bQuitDcOn "Quittierung HV-Freischaltung";
+CM_ SG_ 645 INV4_ActVal1_AMK_bInverterOn "Spiegel Reglerfreigabe";
+CM_ SG_ 645 INV4_ActVal1_AMK_bError "Fehler";
+CM_ SG_ 645 INV4_ActVal1_AMK_bDerating "Derating (Momentbegrenzung aktiv)";
+CM_ SG_ 645 INV4_ActVal1_AMK_bDcOn "Spiegel HV-Freischaltung";
+CM_ SG_ 645 INV4_ActVal1_AMK_ActualVelocity "Drehzahlsollwert
+";
+CM_ SG_ 390 INV4_SetVal1_AMK_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
+CM_ SG_ 390 INV4_SetVal1_AMK_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
+CM_ SG_ 390 INV4_SetVal1_AMK_TargetVelocity "Drehzahlsollwert";
+CM_ SG_ 390 INV4_SetVal1_AMK_bReserve1 "Reserviert";
+CM_ SG_ 390 INV4_SetVal1_AMK_bReserve0 "Reserviert";
+CM_ SG_ 390 INV4_SetVal1_AMK_bInverterOn "Reglerfreigabe";
+CM_ SG_ 390 INV4_SetVal1_AMK_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
+CM_ SG_ 390 INV4_SetVal1_AMK_bEnable "Antrieb Freigabe";
+CM_ SG_ 390 INV4_SetVal1_AMK_bDcOn "HV-Freischaltung";
+CM_ SG_ 389 INV3_SetVal1_AMK_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
+CM_ SG_ 389 INV3_SetVal1_AMK_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
+CM_ SG_ 389 INV3_SetVal1_AMK_TargetVelocity "Drehzahlsollwert";
+CM_ SG_ 389 INV3_SetVal1_AMK_bReserve1 "Reserviert";
+CM_ SG_ 389 INV3_SetVal1_AMK_bReserve0 "Reserviert";
+CM_ SG_ 389 INV3_SetVal1_AMK_bInverterOn "Reglerfreigabe";
+CM_ SG_ 389 INV3_SetVal1_AMK_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
+CM_ SG_ 389 INV3_SetVal1_AMK_bEnable "Antrieb Freigabe";
+CM_ SG_ 389 INV3_SetVal1_AMK_bDcOn "HV-Freischaltung";
+CM_ SG_ 646 INV3_ActVal2_AMK_TempMotor "Motortemperatur";
+CM_ SG_ 646 INV3_ActVal2_AMK_TempInverter "Coldplate-Temperatur";
+CM_ SG_ 646 INV3_ActVal2_AMK_TempIGBT "IGBT Temperatur";
+CM_ SG_ 646 INV3_ActVal2_AMK_ErrorInfo "Diagnosenummer";
+CM_ SG_ 644 INV3_ActVal1_AMK_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 644 INV3_ActVal1_AMK_MagnetizingCurr "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 644 INV3_ActVal1_AMK_bWarn "Warnung";
+CM_ SG_ 644 INV3_ActVal1_AMK_bSystemReady "System bereit (SBM)";
+CM_ SG_ 644 INV3_ActVal1_AMK_bReserve "Reserviert";
+CM_ SG_ 644 INV3_ActVal1_AMK_bQuitInverterOn "Quittierung Reglerfreigabe";
+CM_ SG_ 644 INV3_ActVal1_AMK_bQuitDcOn "Quittierung HV-Freischaltung";
+CM_ SG_ 644 INV3_ActVal1_AMK_bInverterOn "Spiegel Reglerfreigabe";
+CM_ SG_ 644 INV3_ActVal1_AMK_bError "Fehler";
+CM_ SG_ 644 INV3_ActVal1_AMK_bDerating "Derating (Momentbegrenzung aktiv)";
+CM_ SG_ 644 INV3_ActVal1_AMK_bDcOn "Spiegel HV-Freischaltung";
+CM_ SG_ 644 INV3_ActVal1_AMK_ActualVelocity "Drehzahlsollwert
+";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "NoRa5_Inverter_v1";
+
