@@ -37,6 +37,78 @@ BU_: VCU User Telemetry ISA_Scale Distri AMS
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1320 msg_IVT_Result_Wh: 6 ISA_Scale
+ SG_ sig_IVT_Result_Wh_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_Wh_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_Wh_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_Wh_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_Wh : 23|32@0- (1,0) [0|0] "Wh"  AMS
+ SG_ sig_IVT_MsgCount_Result_Wh : 11|4@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_Wh : 7|8@0+ (1,0) [7|7] ""  AMS
+
+BO_ 1319 msg_IVT_Result_As: 6 ISA_Scale
+ SG_ sig_IVT_Result_As_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_As_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_As_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_As_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_As : 23|32@0- (1,0) [0|0] "As"  AMS
+ SG_ sig_IVT_MsgCount_Result_As : 11|4@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_As : 7|8@0+ (1,0) [6|6] ""  AMS
+
+BO_ 1318 msg_IVT_Result_W: 6 ISA_Scale
+ SG_ sig_IVT_Result_W_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_W_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_W_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_W_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_W : 23|32@0- (1,0) [0|0] "W"  AMS
+ SG_ sig_IVT_MsgCount_Result_W : 11|4@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_W : 7|8@0+ (1,0) [5|5] ""  AMS
+
+BO_ 1317 msg_IVT_Result_T: 6 ISA_Scale
+ SG_ sig_IVT_Result_T_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_T_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_T_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_T_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_T : 7|8@0+ (1,0) [4|4] ""  AMS
+ SG_ sig_IVT_Result_T : 23|32@0- (1,0) [-32767|32768] "°C"  AMS
+ SG_ sig_IVT_MsgCount_Result_T : 11|4@0+ (1,0) [0|0] ""  AMS
+
+BO_ 1316 msg_IVT_Result_U3: 6 ISA_Scale
+ SG_ sig_IVT_Result_U3_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U3_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U3_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U3_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_U3 : 7|8@0+ (1,0) [3|3] ""  AMS
+ SG_ sig_IVT_Result_U3 : 23|32@0- (1,0) [0|0] "mV"  AMS
+ SG_ sig_IVT_MsgCount_Result_U3 : 11|4@0+ (1,0) [0|0] ""  AMS
+
+BO_ 1315 msg_IVT_Result_U2: 6 ISA_Scale
+ SG_ sig_IVT_Result_U2_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U2_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U2_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U2_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_U2 : 7|8@0+ (1,0) [2|2] ""  AMS
+ SG_ sig_IVT_MsgCount_Result_U2 : 11|4@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U2 : 23|32@0- (1,0) [0|0] "mV"  AMS
+
+BO_ 1314 msg_IVT_Result_U1: 6 ISA_Scale
+ SG_ sig_IVT_Result_U1_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U1_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U1_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_U1_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_U1 : 7|8@0+ (1,0) [1|1] ""  AMS
+ SG_ sig_IVT_Result_U1 : 23|32@0- (1,0) [0|0] "mV"  AMS
+ SG_ sig_IVT_MsgCount_Result_U1 : 11|4@0+ (1,0) [0|0] ""  AMS
+
+BO_ 1313 msg_IVT_Result_I: 6 ISA_Scale
+ SG_ sig_IVT_Result_I_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_I_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_I_Measure_Err : 14|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_I_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_ID_Result_I : 7|8@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_MsgCount_Result_I : 11|4@0+ (1,0) [0|0] ""  AMS
+ SG_ sig_IVT_Result_I : 23|32@0- (1,0) [0|0] "mA"  AMS
+
 BO_ 1281 msg_AMS_Voltages: 7 AMS
  SG_ Voltage_Cell_288 m95 : 47|16@0+ (1,0) [0|0] "V"  User
  SG_ Voltage_Cell_287 m95 : 31|16@0+ (1,0) [0|0] "V"  User
@@ -329,7 +401,7 @@ BO_ 1281 msg_AMS_Voltages: 7 AMS
  SG_ Multiplexor_Voltages M : 7|8@0+ (1,0) [0|35] ""  User
 
 BO_ 1280 msg_AMS_Temps: 7 AMS
- SG_ Temp_Cell_003 m0 : 47|16@0+ (1,0) [0|65535] "°C" Vector__XXX
+ SG_ Temp_Cell_003 m0 : 47|16@0+ (1,0) [0|65535] "°C"  User
  SG_ Temp_Cell_288 m95 : 47|16@0+ (1,0) [0|65535] "°C"  User
  SG_ Temp_Cell_287 m95 : 31|16@0+ (1,0) [0|65535] "°C"  User
  SG_ Temp_Cell_286 m95 : 15|16@0+ (1,0) [0|65535] "°C"  User
