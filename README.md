@@ -1,7 +1,7 @@
 # VCU
 Repo for VCU Project
 
-~~NoRa5.dbc is the true and only file for the VCU. ~~
+~~NoRa5.dbc is the true and only file for the VCU.
 
 current stand is 4 CANs -> see 4CANs directory
 
