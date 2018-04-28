@@ -1,0 +1,203 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Flasher DataECU UDSnode02 UDSnode01 MyECU
+
+
+BO_ 1554 msg_flashdiag_response_MyECU: 8 MyECU
+ SG_ sig_flashdiag_response_MyECU : 56|8@1+ (1,0) [0|255] ""  Flasher
+
+BO_ 1552 msg_flashdiag_request_MyECU: 8 Flasher
+ SG_ sig_flashdiag_request_MyECU : 56|8@1+ (1,0) [0|255] ""  MyECU
+
+BO_ 1556 msg_flashdiag_request_func_CAN1: 8 Flasher
+ SG_ sig_flashdiag_request_func_CAN1 : 56|8@1+ (1,0) [0|255] ""  MyECU
+
+BO_ 258 msg_com_data2_CAN1: 8 DataECU
+ SG_ sig_com_data2_CAN1 : 0|64@1+ (1,0) [0|1.84467440737096E+019] ""  MyECU
+
+BO_ 257 msg_com_data1_CAN1: 8 DataECU
+ SG_ sig_com_data1_CAN1 : 0|64@1+ (1,0) [0|1.84467440737096E+019] ""  MyECU
+
+BO_ 1790 msg_diag_request_func_CAN1: 8 MyECU
+ SG_ sig_diag_request_func_CAN1 : 0|8@1+ (1,0) [0|255] ""  UDSnode01,UDSnode02
+
+BO_ 1993 msg_diag_response_UDSnode02: 8 UDSnode02
+ SG_ sig_diag_response_UDSnode02 : 0|8@1+ (1,0) [0|255] ""  MyECU
+
+BO_ 1977 msg_diag_response_UDSnode01: 8 UDSnode01
+ SG_ sig_diag_response_UDSnode01 : 0|8@1+ (1,0) [0|255] ""  MyECU
+
+BO_ 1985 msg_diag_request_UDSnode02: 8 MyECU
+ SG_ sig_diag_request_UDSnode02 : 0|8@1+ (1,0) [0|255] ""  UDSnode02
+
+BO_ 1969 msg_diag_request_UDSnode01: 8 MyECU
+ SG_ sig_diag_request_UDSnode01 : 0|8@1+ (1,0) [0|255] ""  UDSnode01
+
+BO_ 1024 msg_nm_MyECU_CAN1: 8 MyECU
+ SG_ sig_nm_MyECU_CAN1_UserData : 16|48@1+ (1,0) [0|281474976710655] ""  DataECU
+ SG_ sig_nm_MyECU_CAN1_SNI : 8|8@1+ (1,0) [0|255] ""  DataECU
+ SG_ sig_nm_MyECU_CAN1_CBV : 0|8@1+ (1,0) [0|255] ""  DataECU
+
+
+
+BA_DEF_ BO_  "DiagConnection" INT 0 65535;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "DiagUUDTResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_  "NmAsrMessageCount" INT 0 256;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 65535;
+BA_DEF_  "IlTxTimeout" INT 0 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "DiagUUDTResponse" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrNode" "yes";
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_  "IlTxTimeout" 0;
+BA_DEF_DEF_  "ILUsed" "yes";
+BA_DEF_DEF_  "GenMsgILSupport" "yes";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "NmAsrWaitBusSleepTime" 900;
+BA_ "NmAsrCanMsgCycleTime" 800;
+BA_ "Manufacturer" "Vector";
+BA_ "NmType" "NmAsr";
+BA_ "BusType" "CAN";
+BA_ "DBName" "CAN1";
+BA_ "NmAsrNode" BU_ Flasher 0;
+BA_ "ILUsed" BU_ Flasher 0;
+BA_ "DiagResponse" BO_ 1554 1;
+BA_ "DiagConnection" BO_ 1554 21;
+BA_ "GenMsgILSupport" BO_ 1554 0;
+BA_ "DiagRequest" BO_ 1552 1;
+BA_ "DiagConnection" BO_ 1552 21;
+BA_ "GenMsgILSupport" BO_ 1552 0;
+BA_ "DiagState" BO_ 1556 1;
+BA_ "DiagConnection" BO_ 1556 21;
+BA_ "GenMsgILSupport" BO_ 1556 0;
+BA_ "DiagConnection" BO_ 1790 254;
+BA_ "DiagState" BO_ 1790 1;
+BA_ "GenMsgILSupport" BO_ 1790 0;
+BA_ "DiagConnection" BO_ 1993 12;
+BA_ "DiagResponse" BO_ 1993 1;
+BA_ "GenMsgILSupport" BO_ 1993 0;
+BA_ "DiagConnection" BO_ 1977 11;
+BA_ "DiagResponse" BO_ 1977 1;
+BA_ "GenMsgILSupport" BO_ 1977 0;
+BA_ "DiagConnection" BO_ 1985 12;
+BA_ "DiagRequest" BO_ 1985 1;
+BA_ "GenMsgILSupport" BO_ 1985 0;
+BA_ "DiagConnection" BO_ 1969 11;
+BA_ "DiagRequest" BO_ 1969 1;
+BA_ "GenMsgILSupport" BO_ 1969 0;
+BA_ "GenMsgILSupport" BO_ 1024 0;
+BA_ "NmAsrMessage" BO_ 1024 1;
+BA_ "GenMsgSendType" BO_ 1024 0;
+BA_ "GenMsgCycleTime" BO_ 1024 100;
+BA_ "GenSigSendType" SG_ 1554 sig_flashdiag_response_MyECU 7;
+BA_ "GenSigSendType" SG_ 1552 sig_flashdiag_request_MyECU 7;
+BA_ "GenSigSendType" SG_ 1556 sig_flashdiag_request_func_CAN1 7;
+BA_ "GenSigSendType" SG_ 258 sig_com_data2_CAN1 7;
+BA_ "GenSigSendType" SG_ 257 sig_com_data1_CAN1 7;
+BA_ "GenSigSendType" SG_ 1790 sig_diag_request_func_CAN1 7;
+BA_ "GenSigSendType" SG_ 1993 sig_diag_response_UDSnode02 7;
+BA_ "GenSigSendType" SG_ 1977 sig_diag_response_UDSnode01 7;
+BA_ "GenSigSendType" SG_ 1985 sig_diag_request_UDSnode02 7;
+BA_ "GenSigSendType" SG_ 1969 sig_diag_request_UDSnode01 7;
+BA_ "GenSigCycleTime" SG_ 1024 sig_nm_MyECU_CAN1_UserData 100;
+BA_ "GenSigCycleTimeActive" SG_ 1024 sig_nm_MyECU_CAN1_UserData 100;
+BA_ "GenSigCycleTime" SG_ 1024 sig_nm_MyECU_CAN1_SNI 100;
+BA_ "GenSigCycleTimeActive" SG_ 1024 sig_nm_MyECU_CAN1_SNI 100;
+BA_ "GenSigSendType" SG_ 1024 sig_nm_MyECU_CAN1_CBV 0;
+BA_ "GenSigCycleTime" SG_ 1024 sig_nm_MyECU_CAN1_CBV 100;
+BA_ "GenSigCycleTimeActive" SG_ 1024 sig_nm_MyECU_CAN1_CBV 100;
+
