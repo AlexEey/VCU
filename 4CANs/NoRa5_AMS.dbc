@@ -37,6 +37,13 @@ BU_: VCU User Telemetry ISA_Scale Distri AMS
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ HVFan_ON : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 518 msg_AMS_MinMaxVoltage: 4 AMS
+ SG_ sig_AMS_MaxVoltage : 23|16@0+ (1,0) [0|0] "V"  VCU
+ SG_ sig_AMS_MinVoltage : 7|16@0+ (1,0) [0|0] "V"  VCU
+
 BO_ 1320 msg_IVT_Result_Wh: 6 ISA_Scale
  SG_ sig_IVT_Result_Wh_System_Error : 15|1@0+ (1,0) [0|0] ""  AMS
  SG_ sig_IVT_Result_Wh_OCS : 12|1@0+ (1,0) [0|0] ""  AMS
@@ -1313,12 +1320,20 @@ BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  AMS
 
 BO_ 562 msg_VCU_Cmd_AmsOptions1: 1 VCU
- SG_ HVFan_ON : 7|8@0+ (1,0) [0|255] ""  AMS
+ SG_ sig_cmd_AMSoption8 : 8|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption7 : 6|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption6 : 5|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption5 : 4|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption4 : 3|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption3 : 2|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption2 : 1|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption1 : 0|1@1- (1,0) [0|0] ""  AMS
 
 
 
 CM_ BU_ User "externer Entwickler z.B. mit CANoe";
 CM_ BU_ ISA_Scale "ISA Scale - Stromsensor";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";
 BA_ "BusType" "CAN";

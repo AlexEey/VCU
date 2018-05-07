@@ -33,19 +33,30 @@ NS_ :
 
 BS_:
 
-BU_: Reserve2 SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DBR SS_DBL VCU User Reserve1 Telemetry SS_BreakLight SmartSensor PedalIntegratedCircuit ISA_Scale Distri Dashboard AclrGPS
+BU_: Reserve2 SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DBR SS_DBL VCU User Reserve1 Telemetry SS_BreakLight SmartSensor PedalIntegratedCircuit Distri Dashboard AclrGPS
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
+ SG_ sig_VCU_cmdPICverbose : 0|1@1- (1,0) [0|0] ""  PedalIntegratedCircuit
+
+BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
+ SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_PIC_DriveValue : 7|16@0- (0.0030518,0) [-100.0013824|99.9983306] ""  VCU
+
 BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow
- SG_ sig_WaterFlow1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_WaterFlow1 : 7|8@0+ (1,0) [0|255] ""  VCU
 
 BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ sig_VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  User
 
-BO_ 656 msg_TorqueAndBreak: 2 PedalIntegratedCircuit
- SG_ sig_BreakPressure : 15|8@0+ (0.39216,0) [0|100.0008] ""  VCU
- SG_ sig_Torque : 7|8@0+ (0.39216,0) [0|100.0008] ""  VCU
+BO_ 657 msg_PIC_TorqueAndBreak: 5 PedalIntegratedCircuit
+ SG_ sig_PIC_BreakPressure2 : 39|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_PIC_BreakPressure1 : 31|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_PIC_BreakPedal1 : 23|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TorquePedal2 : 15|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TorquePedal1 : 7|8@0+ (1,0) [0|255] ""  VCU
 
 BO_ 800 msg_SS_CMD_BrakeLight: 1 VCU
  SG_ sig_BrakeLight_ON : 0|1@0+ (1,0) [0|0] ""  SS_BreakLight
@@ -110,7 +121,6 @@ CM_ BU_ SS_DBL "SmartSensor Deflection Back Left";
 CM_ BU_ User "extern developer eg. with CANoe";
 CM_ BU_ SS_BreakLight "SmartSensor Brake Light";
 CM_ BU_ PedalIntegratedCircuit "Pedalerie Platine (IC - integrated circuit)";
-CM_ BU_ ISA_Scale "ISA Scale - Stromsensor";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";
 VAL_ 561 sig_VCU_Alive_Signal 1 "ONLINE" 0 "OFFLINE" ;
