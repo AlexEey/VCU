@@ -33,23 +33,52 @@ NS_ :
 
 BS_:
 
-BU_: Reserve2 SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DBR SS_DBL VCU User Reserve1 Telemetry SS_BreakLight SmartSensor PedalIntegratedCircuit Distri Dashboard AclrGPS
+BU_: SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow1 SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DRR SS_DRL VCU User Telemetry SS_BreakLight PedalIntegratedCircuit Distri Dashboard AclrGPS
+VAL_TABLE_ Vt_sig_SetBreakLight 1 "TSAL ON" 0 "TSAL OFF" ;
+VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
+
+BO_ 564 msg_VCU_cmd_Distri: 1 VCU
+ SG_ sig_cmd_Distri_reserve : 7|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse7_SC : 6|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse6_DCDCp2 : 5|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse5_DCDCp1 : 4|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse4_TSAL : 3|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse3_InvG2 : 2|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse2_InvG1 : 1|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse1_VCU : 0|1@1- (1,0) [0|0] ""  Distri
+
+BO_ 1286 msg_DistriStatus1: 8 Distri
+ SG_ sig_Distri_SC_OK : 7|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_SC_faultMember : 56|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent7_SC : 48|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent56_DCDCsum : 40|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent4_TSAL : 32|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent3_InvG2 : 24|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent2_InvG1 : 16|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_DistriCurrent1_VCU : 8|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F7_ShutdownC_OK : 6|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F6_DCDCp2_OK : 5|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F5_DCDCp1OK : 4|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F4_TSAL_OK : 3|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F3_InvGroup2_OK : 2|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F2_InvGoup1_OK : 1|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F1_VCU_OK : 0|1@1- (1,0) [0|0] ""  VCU
 
 BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1- (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
- SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
- SG_ sig_PIC_DriveValue : 7|16@0- (0.0030518,0) [-100.0013824|99.9983306] ""  VCU
+ SG_ sig_PIC_DriveValue : 7|16@0- (0.00305180437934,0) [-100.001525902213|99.9984740978338] ""  VCU
 
-BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow
+BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
  SG_ sig_WaterFlow1 : 7|8@0+ (1,0) [0|255] ""  VCU
 
 BO_ 561 msg_VCU_Alive: 1 VCU
- SG_ sig_VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  User
+ SG_ sig_VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  Dashboard
 
 BO_ 657 msg_PIC_TorqueAndBreak: 5 PedalIntegratedCircuit
  SG_ sig_PIC_BreakPressure2 : 39|8@0+ (1,0) [0|255] ""  VCU
@@ -59,10 +88,10 @@ BO_ 657 msg_PIC_TorqueAndBreak: 5 PedalIntegratedCircuit
  SG_ sig_TorquePedal1 : 7|8@0+ (1,0) [0|255] ""  VCU
 
 BO_ 800 msg_SS_CMD_BrakeLight: 1 VCU
- SG_ sig_BrakeLight_ON : 0|1@0+ (1,0) [0|0] ""  SS_BreakLight
+ SG_ sig_cmd_SetBrakeLight : 0|1@0+ (1,0) [0|0] ""  SS_BreakLight
 
 BO_ 801 msg_SS_CMD_RTDS: 1 VCU
- SG_ sig_RTDS_ON : 0|1@0+ (1,0) [0|0] ""  SS_RTDS
+ SG_ sig_SetRTDS : 0|1@0+ (1,0) [0|0] ""  SS_RTDS
 
 BO_ 802 msg_SS_CMD_WaterPump1: 1 VCU
  SG_ sig_WaterPump1_ON : 0|1@0+ (1,0) [0|0] ""  SS_WaterPump1
@@ -76,11 +105,11 @@ BO_ 848 msg_SS_Deflection_FL: 2 SS_DFL
 BO_ 849 msg_SS_Deflection_FR: 2 SS_DFR
  SG_ sig_DeflectionFrontRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
 
-BO_ 850 msg_SS_Deflection_BL: 2 SS_DBL
- SG_ sig_DeflectionBackLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
+BO_ 850 msg_SS_Deflection_RL: 2 SS_DRL
+ SG_ sig_DeflectionRearLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
 
-BO_ 851 msg_SS_Deflection_BR: 2 SS_DBR
- SG_ sig_DeflectionBackRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
+BO_ 851 msg_SS_Deflection_RR: 2 SS_DRR
+ SG_ sig_DeflectionRearRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
 
 BO_ 852 msg_SS_SteeringAngle: 2 SS_SteeringAngle
  SG_ sig_SteeringAngle : 0|16@1- (1,0) [-32768|32767] ""  VCU
@@ -111,17 +140,22 @@ CM_ BU_ SS_WaterTemperature2 "SmartSensor Water Temperature 2";
 CM_ BU_ SS_WaterTemperature1 "SmartSensor Water Temperature 1";
 CM_ BU_ SS_WaterPump2 "SmartSensor Water Pump 2";
 CM_ BU_ SS_WaterPump1 "SmartSensor Water Pump 1";
-CM_ BU_ SS_WaterFlow "SmartSensor Water Flow";
+CM_ BU_ SS_WaterFlow1 "SmartSensor Water Flow";
 CM_ BU_ SS_SteeringAngle "SmartSensor steering angle";
 CM_ BU_ SS_RTDS "SmartSensor ready to drive sound";
 CM_ BU_ SS_DFR "SmartSensor Deflection Front Right";
 CM_ BU_ SS_DFL "SmartSensor Deflection Front Left";
-CM_ BU_ SS_DBR "Smart Sensor Deflection Back Right";
-CM_ BU_ SS_DBL "SmartSensor Deflection Back Left";
+CM_ BU_ SS_DRR "Smart Sensor Deflection Rear Right";
+CM_ BU_ SS_DRL "SmartSensor Deflection Rear Left";
 CM_ BU_ User "extern developer eg. with CANoe";
 CM_ BU_ SS_BreakLight "SmartSensor Brake Light";
 CM_ BU_ PedalIntegratedCircuit "Pedalerie Platine (IC - integrated circuit)";
+CM_ SG_ 1286 sig_Distri_F6_DCDCp2_OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses
+";
+CM_ SG_ 1286 sig_Distri_F5_DCDCp1OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";
 VAL_ 561 sig_VCU_Alive_Signal 1 "ONLINE" 0 "OFFLINE" ;
+VAL_ 800 sig_cmd_SetBrakeLight 1 "TSAL ON" 0 "TSAL OFF" ;
+VAL_ 801 sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 
