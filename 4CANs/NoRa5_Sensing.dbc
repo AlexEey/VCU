@@ -39,6 +39,10 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
+ SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sig_Dash_Ready2Drive : 0|1@1- (1,0) [0|0] ""  VCU
+
 BO_ 564 msg_VCU_cmd_Distri: 1 VCU
  SG_ sig_cmd_Distri_reserve : 7|1@1- (1,0) [0|0] ""  Distri
  SG_ sig_resetFuse7_SC : 6|1@1- (1,0) [0|0] ""  Distri
