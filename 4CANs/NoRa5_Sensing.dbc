@@ -33,14 +33,84 @@ NS_ :
 
 BS_:
 
-BU_: SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow1 SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DRR SS_DRL VCU User Telemetry SS_BreakLight PedalIntegratedCircuit Distri Dashboard AclrGPS
+BU_: SmartSensor SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow1 SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DRR SS_DRL VCU User Telemetry SS_BreakLight PedalIntegratedCircuit Distri Dashboard AclrGPS
 VAL_TABLE_ Vt_sig_SetBreakLight 1 "TSAL ON" 0 "TSAL OFF" ;
 VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1061 msg_Calibrate_SS365: 1 VCU
+ SG_ sig_Calibrate_SS365 : 0|1@1- (1,0) [0|0] ""  SS_WaterPump2
+
+BO_ 1060 msg_Calibrate_SS364: 1 VCU
+ SG_ sig_Calibrate_SS364 : 0|1@1- (1,0) [0|0] ""  SS_WaterPump1
+
+BO_ 1059 msg_Calibrate_SS363: 1 VCU
+ SG_ sig_Calibrate_SS363 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature4
+
+BO_ 1058 msg_Calibrate_SS362: 1 VCU
+ SG_ sig_Calibrate_SS362 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature3
+
+BO_ 1057 msg_Calibrate_SS361: 1 VCU
+ SG_ sig_Calibrate_SS361 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature2
+
+BO_ 1056 msg_Calibrate_SS360: 1 VCU
+ SG_ sig_Calibrate_SS360 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature1
+
+BO_ 1055 msg_Calibrate_SS35F: 1 VCU
+ SG_ sig_Calibrate_SS35F : 0|1@1- (1,0) [0|0] ""  SS_WaterFlow1
+
+BO_ 1054 msg_Calibrate_SS35E: 1 VCU
+ SG_ sig_Calibrate_SS35E : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1053 msg_Calibrate_SS35D: 1 VCU
+ SG_ sig_Calibrate_SS35D : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1052 msg_Calibrate_SS35C: 1 VCU
+ SG_ sig_Calibrate_SS35C : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1051 msg_Calibrate_SS35B: 1 VCU
+ SG_ sig_Calibrate_SS35B : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1050 msg_Calibrate_SS35A: 1 VCU
+ SG_ sig_Calibrate_SS35A : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1049 msg_Calibrate_SS359: 1 VCU
+ SG_ sig_Calibrate_SS359 : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1048 msg_Calibrate_SS358: 1 VCU
+ SG_ sig_Calibrate_SS358 : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1047 msg_Calibrate_SS357: 1 VCU
+ SG_ sig_Calibrate_SS357 : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1046 msg_Calibrate_SS356: 1 VCU
+ SG_ sig_Calibrate_SS356 : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1045 msg_Calibrate_SS355: 1 VCU
+ SG_ sig_Calibrate_SS355 : 0|1@1- (1,0) [0|0] "" SmartSensor
+
+BO_ 1044 msg_Calibrate_SS354: 1 VCU
+ SG_ sig_Calibrate_SS354 : 0|1@1- (1,0) [0|0] ""  SS_SteeringAngle
+
+BO_ 1043 msg_Calibrate_SS353: 1 VCU
+ SG_ sig_Calibrate_SS353 : 0|1@1- (1,0) [0|0] ""  SS_DRR
+
+BO_ 1042 msg_Calibrate_SS352: 1 VCU
+ SG_ sig_Calibrate_SS352 : 0|1@1- (1,0) [0|0] ""  SS_DRL
+
+BO_ 1041 msg_Calibrate_SS351: 1 VCU
+ SG_ sig_Calibrate_SS351 : 0|1@1- (1,0) [0|0] ""  SS_DFR
+
+BO_ 1040 msg_Calibrate_SS350: 1 VCU
+ SG_ sig_Calibrate_SS350 : 0|1@1- (1,0) [0|0] ""  SS_DFL
+
+BO_ 1024 msg_VCU_calibrateAllSS: 1 VCU
+ SG_ sig_VCU_calibrateAllSS : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
+
 BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
- SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sig_Dash_CalibrateSS : 1|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_Dash_Ready2Drive : 0|1@1- (1,0) [0|0] ""  VCU
 
 BO_ 564 msg_VCU_cmd_Distri: 1 VCU
@@ -154,6 +224,8 @@ CM_ BU_ SS_DRL "SmartSensor Deflection Rear Left";
 CM_ BU_ User "extern developer eg. with CANoe";
 CM_ BU_ SS_BreakLight "SmartSensor Brake Light";
 CM_ BU_ PedalIntegratedCircuit "Pedalerie Platine (IC - integrated circuit)";
+CM_ BU_ Distri "current distribution board. contains resatable e-fuses";
+CM_ BU_ AclrGPS "ST Box, gyro and GPS sensors";
 CM_ SG_ 1286 sig_Distri_F6_DCDCp2_OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses
 ";
 CM_ SG_ 1286 sig_Distri_F5_DCDCp1OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses";
