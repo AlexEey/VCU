@@ -61,34 +61,34 @@ BO_ 1055 msg_Calibrate_SS35F: 1 VCU
  SG_ sig_Calibrate_SS35F : 0|1@1- (1,0) [0|0] ""  SS_WaterFlow1
 
 BO_ 1054 msg_Calibrate_SS35E: 1 VCU
- SG_ sig_Calibrate_SS35E : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS35E : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1053 msg_Calibrate_SS35D: 1 VCU
- SG_ sig_Calibrate_SS35D : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS35D : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1052 msg_Calibrate_SS35C: 1 VCU
- SG_ sig_Calibrate_SS35C : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS35C : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1051 msg_Calibrate_SS35B: 1 VCU
- SG_ sig_Calibrate_SS35B : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS35B : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1050 msg_Calibrate_SS35A: 1 VCU
- SG_ sig_Calibrate_SS35A : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS35A : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1049 msg_Calibrate_SS359: 1 VCU
- SG_ sig_Calibrate_SS359 : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS359 : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1048 msg_Calibrate_SS358: 1 VCU
- SG_ sig_Calibrate_SS358 : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS358 : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1047 msg_Calibrate_SS357: 1 VCU
- SG_ sig_Calibrate_SS357 : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS357 : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1046 msg_Calibrate_SS356: 1 VCU
- SG_ sig_Calibrate_SS356 : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS356 : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1045 msg_Calibrate_SS355: 1 VCU
- SG_ sig_Calibrate_SS355 : 0|1@1- (1,0) [0|0] "" SmartSensor
+ SG_ sig_Calibrate_SS355 : 0|1@1- (1,0) [0|0] ""  SmartSensor
 
 BO_ 1044 msg_Calibrate_SS354: 1 VCU
  SG_ sig_Calibrate_SS354 : 0|1@1- (1,0) [0|0] ""  SS_SteeringAngle
@@ -144,6 +144,7 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1- (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
+ SG_ sig_PIC_RealBrakeActive : 18|1@1- (1,0) [0|0] "" Vector__XXX
  SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
  SG_ sig_PIC_DriveValue : 7|16@0- (0.00305180437934,0) [-100.001525902213|99.9984740978338] ""  VCU
