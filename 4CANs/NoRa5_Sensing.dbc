@@ -109,9 +109,9 @@ BO_ 1024 msg_VCU_calibrateAllSS: 1 VCU
  SG_ sig_VCU_calibrateAllSS : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
 
 BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
- SG_ sig_Dash_CalibrateSS : 1|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_RedButton : 1|1@1- (1,0) [0|0] ""  VCU
  SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_Dash_Ready2Drive : 0|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_GreenButton : 0|1@1- (1,0) [0|0] ""  VCU
 
 BO_ 564 msg_VCU_cmd_Distri: 1 VCU
  SG_ sig_cmd_Distri_reserve : 7|1@1- (1,0) [0|0] ""  Distri
