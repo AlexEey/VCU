@@ -40,91 +40,91 @@ VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
 BO_ 1061 msg_Calibrate_SS365: 1 VCU
- SG_ sig_Calibrate_SS365 : 0|1@1- (1,0) [0|0] ""  SS_WaterPump2
+ SG_ sig_Calibrate_SS365 : 0|1@1+ (1,0) [0|0] ""  SS_WaterPump2
 
 BO_ 1060 msg_Calibrate_SS364: 1 VCU
- SG_ sig_Calibrate_SS364 : 0|1@1- (1,0) [0|0] ""  SS_WaterPump1
+ SG_ sig_Calibrate_SS364 : 0|1@1+ (1,0) [0|0] ""  SS_WaterPump1
 
 BO_ 1059 msg_Calibrate_SS363: 1 VCU
- SG_ sig_Calibrate_SS363 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature4
+ SG_ sig_Calibrate_SS363 : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature4
 
 BO_ 1058 msg_Calibrate_SS362: 1 VCU
- SG_ sig_Calibrate_SS362 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature3
+ SG_ sig_Calibrate_SS362 : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature3
 
 BO_ 1057 msg_Calibrate_SS361: 1 VCU
- SG_ sig_Calibrate_SS361 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature2
+ SG_ sig_Calibrate_SS361 : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature2
 
 BO_ 1056 msg_Calibrate_SS360: 1 VCU
- SG_ sig_Calibrate_SS360 : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature1
+ SG_ sig_Calibrate_SS360 : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature1
 
 BO_ 1055 msg_Calibrate_SS35F: 1 VCU
- SG_ sig_Calibrate_SS35F : 0|1@1- (1,0) [0|0] ""  SS_WaterFlow1
+ SG_ sig_Calibrate_SS35F : 0|1@1+ (1,0) [0|0] ""  SS_WaterFlow1
 
 BO_ 1054 msg_Calibrate_SS35E: 1 VCU
- SG_ sig_Calibrate_SS35E : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS35E : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1053 msg_Calibrate_SS35D: 1 VCU
- SG_ sig_Calibrate_SS35D : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS35D : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1052 msg_Calibrate_SS35C: 1 VCU
- SG_ sig_Calibrate_SS35C : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS35C : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1051 msg_Calibrate_SS35B: 1 VCU
- SG_ sig_Calibrate_SS35B : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS35B : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1050 msg_Calibrate_SS35A: 1 VCU
- SG_ sig_Calibrate_SS35A : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS35A : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1049 msg_Calibrate_SS359: 1 VCU
- SG_ sig_Calibrate_SS359 : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS359 : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1048 msg_Calibrate_SS358: 1 VCU
- SG_ sig_Calibrate_SS358 : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS358 : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1047 msg_Calibrate_SS357: 1 VCU
- SG_ sig_Calibrate_SS357 : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS357 : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1046 msg_Calibrate_SS356: 1 VCU
- SG_ sig_Calibrate_SS356 : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS356 : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1045 msg_Calibrate_SS355: 1 VCU
- SG_ sig_Calibrate_SS355 : 0|1@1- (1,0) [0|0] ""  SmartSensor
+ SG_ sig_Calibrate_SS355 : 0|1@1+ (1,0) [0|0] ""  SmartSensor
 
 BO_ 1044 msg_Calibrate_SS354: 1 VCU
- SG_ sig_Calibrate_SS354 : 0|1@1- (1,0) [0|0] ""  SS_SteeringAngle
+ SG_ sig_Calibrate_SS354 : 0|1@1+ (1,0) [0|0] ""  SS_SteeringAngle
 
 BO_ 1043 msg_Calibrate_SS353: 1 VCU
- SG_ sig_Calibrate_SS353 : 0|1@1- (1,0) [0|0] ""  SS_DRR
+ SG_ sig_Calibrate_SS353 : 0|1@1+ (1,0) [0|0] ""  SS_DRR
 
 BO_ 1042 msg_Calibrate_SS352: 1 VCU
- SG_ sig_Calibrate_SS352 : 0|1@1- (1,0) [0|0] ""  SS_DRL
+ SG_ sig_Calibrate_SS352 : 0|1@1+ (1,0) [0|0] ""  SS_DRL
 
 BO_ 1041 msg_Calibrate_SS351: 1 VCU
- SG_ sig_Calibrate_SS351 : 0|1@1- (1,0) [0|0] ""  SS_DFR
+ SG_ sig_Calibrate_SS351 : 0|1@1+ (1,0) [0|0] ""  SS_DFR
 
 BO_ 1040 msg_Calibrate_SS350: 1 VCU
- SG_ sig_Calibrate_SS350 : 0|1@1- (1,0) [0|0] ""  SS_DFL
+ SG_ sig_Calibrate_SS350 : 0|1@1+ (1,0) [0|0] ""  SS_DFL
 
 BO_ 1024 msg_VCU_calibrateAllSS: 1 VCU
- SG_ sig_VCU_calibrateAllSS : 0|1@1- (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
+ SG_ sig_VCU_calibrateAllSS : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
 
 BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
- SG_ sig_Dash_RedButton : 1|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_RedButton : 1|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_Dash_GreenButton : 0|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_GreenButton : 0|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 564 msg_VCU_cmd_Distri: 1 VCU
- SG_ sig_cmd_Distri_reserve : 7|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse7_SC : 6|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse6_DCDCp2 : 5|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse5_DCDCp1 : 4|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse4_TSAL : 3|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse3_InvG2 : 2|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse2_InvG1 : 1|1@1- (1,0) [0|0] ""  Distri
- SG_ sig_resetFuse1_VCU : 0|1@1- (1,0) [0|0] ""  Distri
+ SG_ sig_cmd_Distri_reserve : 7|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse7_SC : 6|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse6_DCDCp2 : 5|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse5_DCDCp1 : 4|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse4_TSAL : 3|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse3_InvG2 : 2|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse2_InvG1 : 1|1@1+ (1,0) [0|0] ""  Distri
+ SG_ sig_resetFuse1_VCU : 0|1@1+ (1,0) [0|0] ""  Distri
 
 BO_ 1286 msg_DistriStatus1: 8 Distri
- SG_ sig_Distri_SC_OK : 7|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_SC_OK : 7|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Distri_SC_faultMember : 56|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_DistriCurrent7_SC : 48|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_DistriCurrent56_DCDCsum : 40|8@1- (1,0) [0|0] ""  VCU
@@ -132,19 +132,19 @@ BO_ 1286 msg_DistriStatus1: 8 Distri
  SG_ sig_DistriCurrent3_InvG2 : 24|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_DistriCurrent2_InvG1 : 16|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_DistriCurrent1_VCU : 8|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F7_ShutdownC_OK : 6|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F6_DCDCp2_OK : 5|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F5_DCDCp1OK : 4|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F4_TSAL_OK : 3|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F3_InvGroup2_OK : 2|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F2_InvGoup1_OK : 1|1@1- (1,0) [0|0] ""  VCU
- SG_ sig_Distri_F1_VCU_OK : 0|1@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F7_ShutdownC_OK : 6|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F6_DCDCp2_OK : 5|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F5_DCDCp1OK : 4|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F4_TSAL_OK : 3|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F3_InvGroup2_OK : 2|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F2_InvGoup1_OK : 1|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_F1_VCU_OK : 0|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
- SG_ sig_VCU_cmdPICverbose : 0|1@1- (1,0) [0|0] ""  PedalIntegratedCircuit
+ SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
- SG_ sig_PIC_RealBrakeActive : 18|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
  SG_ sig_PIC_DriveValue : 7|16@0- (0.00305180437934,0) [-100.001525902213|99.9984740978338] ""  VCU
