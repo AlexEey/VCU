@@ -742,14 +742,14 @@ BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  AMS
 
 BO_ 562 msg_VCU_Cmd_AmsOptions1: 1 VCU
- SG_ sig_cmd_AMSoption8 : 7|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption7 : 6|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption6 : 5|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption5 : 4|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption4 : 3|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption3 : 2|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption2 : 1|1@1- (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption1 : 0|1@1- (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption8 : 7|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption7 : 6|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption6 : 5|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption5 : 4|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption4 : 3|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption3 : 2|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption2 : 1|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMSoption1 : 0|1@1+ (1,0) [0|0] ""  AMS
 
 
 
