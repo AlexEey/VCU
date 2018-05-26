@@ -146,10 +146,11 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
+ SG_ sig_PIC_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_PIC_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
- SG_ sig_PIC_DriveValue : 7|16@0- (0.00305180437934,0) [-100.001525902213|99.9984740978338] ""  VCU
 
 BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
  SG_ sig_WaterFlow1 : 7|8@0+ (1,0) [0|255] ""  VCU
