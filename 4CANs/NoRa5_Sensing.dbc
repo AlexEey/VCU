@@ -146,8 +146,8 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
- SG_ sig_PIC_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_PIC_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_PIC_breaking : 8|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
+ SG_ sig_PIC_acceleration : 0|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
  SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
@@ -190,7 +190,7 @@ BO_ 851 msg_SS_Deflection_RR: 2 SS_DRR
  SG_ sig_DeflectionRearRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
 
 BO_ 852 msg_SS_SteeringAngle: 2 SS_SteeringAngle
- SG_ sig_SteeringAngle : 0|16@1- (1,0) [-32768|32767] ""  VCU
+ SG_ sig_SteeringAngle : 0|16@1- (0.00549333170567949,0) [-180.005493331706|180] ""  VCU
 
 BO_ 864 msg_SS_WaterTemp1: 1 SS_WaterTemperature1
  SG_ sig_TemperatureWater1 : 7|8@0+ (1,0) [0|255] ""  VCU
