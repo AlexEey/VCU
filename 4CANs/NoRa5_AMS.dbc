@@ -37,14 +37,25 @@ BU_: VCU Telemetry ISA_Scale AMS User
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
-BO_ 519 msg_AMS_MinMaxTemp: 6 Vector__XXX
- SG_ sig_AMS_MinTemp : 7|16@0+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_AMS_MaxTemp : 23|16@0+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_AMS_AvgTemp : 39|16@0+ (1,0) [0|255] "" Vector__XXX
+BO_ 520 msg_AMS_AvgSumVoltageTemp: 8 VCU
+ SG_ sig_AMS_SumVoltage : 39|16@0+ (1,0) [0|65535] ""  VCU
+ SG_ sig_AMS_AvgTemp : 23|16@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMK_AvgVoltage : 7|16@0- (1,0) [0|0] ""  VCU
 
-BO_ 518 msg_AMS_MinMaxVoltage: 6 AMS
- SG_ sig_AMK_AvgVoltage : 39|16@0- (1,0) [0|0] "" Vector__XXX
- SG_ sig_AMS_MaxVoltage : 23|16@0+ (1,0) [0|0] "V"  VCU
+BO_ 519 msg_AMS_MinMaxTemp: 8 AMS
+ SG_ sig_AMS_MaxTemp_CNT : 63|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MaxTemp_ID : 55|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MinTemp_CNT : 31|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MinTemp_ID : 23|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MinTemp : 7|16@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMS_MaxTemp : 39|16@0+ (1,0) [0|255] ""  VCU
+
+BO_ 518 msg_AMS_MinMaxVoltage: 8 AMS
+ SG_ sig_AMS_MaxVoltage_CNT : 63|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MaxVoltage_ID : 55|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MinVoltage_CNT : 31|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MinVoltage_ID : 23|8@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_AMS_MaxVoltage : 39|16@0+ (1,0) [0|0] "V"  VCU
  SG_ sig_AMS_MinVoltage : 7|16@0+ (1,0) [0|0] "V"  VCU
 
 BO_ 1320 msg_IVT_Result_Wh: 6 ISA_Scale
@@ -119,7 +130,7 @@ BO_ 1313 msg_IVT_Result_I: 6 ISA_Scale
  SG_ sig_IVT_MsgCount_Result_I : 11|4@0+ (1,0) [0|0] ""  AMS
  SG_ sig_IVT_Result_I : 23|32@0- (1,0) [0|0] "mA"  AMS
 
-BO_ 1281 msg_AMS_Voltages: 7 AMS
+BO_ 1280 msg_AMS_Voltages: 7 AMS
  SG_ Voltage_Cell_144 m47 : 47|16@0+ (1,0) [0|0] "V"  VCU
  SG_ Voltage_Cell_143 m47 : 31|16@0+ (1,0) [0|0] "V"  VCU
  SG_ Voltage_Cell_142 m47 : 15|16@0+ (1,0) [0|0] "V"  VCU
@@ -266,7 +277,7 @@ BO_ 1281 msg_AMS_Voltages: 7 AMS
  SG_ Voltage_Cell_001 m0 : 15|16@0+ (1,0) [0|0] "V"  VCU
  SG_ Multiplexor_Voltages M : 7|8@0+ (1,0) [0|35] ""  VCU
 
-BO_ 1280 msg_AMS_Temps: 7 AMS
+BO_ 1281 msg_AMS_Temps: 7 AMS
  SG_ Temp_Cell_003 m0 : 47|16@0+ (1,0) [0|65535] "°C"  VCU
  SG_ Temp_Cell_144 m47 : 47|16@0+ (1,0) [0|65535] "°C"  VCU
  SG_ Temp_Cell_143 m47 : 31|16@0+ (1,0) [0|65535] "°C"  VCU
@@ -412,14 +423,6 @@ BO_ 1280 msg_AMS_Temps: 7 AMS
  SG_ Temp_Cell_002 m0 : 31|16@0+ (1,0) [0|65535] "°C"  VCU
  SG_ Temp_Cell_001 m0 : 15|16@0+ (1,0) [0|65535] "°C"  VCU
  SG_ Multiplexor_Temp M : 7|8@0+ (1,0) [0|35] ""  VCU
-
-BO_ 563 msg_VCUtoAMS_Reserve1: 8 VCU
- SG_ VtA_R1_Sig2 : 39|32@0+ (1,0) [0|4294967295] ""  AMS
- SG_ VtA_R1_Sig1 : 7|32@0+ (1,0) [0|4294967295] ""  AMS
-
-BO_ 513 msg_AMStoVCU_Reserve1: 8 AMS
- SG_ AtV_R1_Sig2 : 39|32@0+ (1,0) [0|4294967295] ""  VCU
- SG_ AtV_R1_Sig1 : 7|32@0+ (1,0) [0|4294967295] ""  VCU
 
 BO_ 512 msg_AMS_Status: 5 AMS
  SG_ Cell_UV_144 m11 : 38|1@0+ (1,0) [0|0] ""  VCU
@@ -719,10 +722,10 @@ BO_ 512 msg_AMS_Status: 5 AMS
  SG_ Multiplexor_AMS_Status M : 15|8@0+ (1,0) [0|255] ""  VCU
  SG_ Global_Enable_Flag : 7|1@0+ (1,0) [0|1] ""  VCU
 
-BO_ 514 msg_AMS_Alive: 4 AMS
- SG_ AMS_Alive_Counter : 7|32@0+ (1,0) [0|0] ""  VCU
+BO_ 514 msg_AMS_Alive: 1 AMS
+ SG_ AMS_Alive : 0|1@0+ (1,0) [0|0] ""  VCU
 
-BO_ 515 msg_AMS_Safety: 2 AMS
+BO_ 528 msg_AMS_CPU_IO_STATES: 2 AMS
  SG_ AMS_Safety_Resever : 15|8@0- (1,0) [-128|127] ""  VCU
  SG_ Safety_Circuit : 0|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_BRAKE_PLAUSIBLE : 1|1@0+ (1,0) [0|0] ""  VCU
