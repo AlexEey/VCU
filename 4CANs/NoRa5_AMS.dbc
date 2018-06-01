@@ -725,16 +725,15 @@ BO_ 512 msg_AMS_Status: 5 AMS
 BO_ 514 msg_AMS_Alive: 1 AMS
  SG_ AMS_Alive : 0|1@0+ (1,0) [0|0] ""  VCU
 
-BO_ 528 msg_AMS_CPU_IO_STATES: 2 AMS
- SG_ AMS_Safety_Resever : 15|8@0- (1,0) [-128|127] ""  VCU
- SG_ Safety_Circuit : 0|1@0+ (1,0) [0|0] ""  VCU
+BO_ 528 msg_AMS_CPU_IO_STATES: 1 AMS
+ SG_ Safety_Circuit_OK : 0|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_BRAKE_PLAUSIBLE : 1|1@0+ (1,0) [0|0] ""  VCU
  SG_ PO_AIR_ENABLE : 2|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_TSAL : 3|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_P_ABOVE_5KW : 4|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_HW_AIR_OFF : 5|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_BRAKE_PRESSURE : 6|1@0+ (1,0) [0|0] ""  VCU
- SG_ PI_IMD_MEMORY : 7|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_IMD_OK_MEMORY : 7|1@0+ (1,0) [0|0] ""  VCU
 
 BO_ 517 msg_AMS_Options: 1 AMS
  SG_ Option_7 : 0|1@0+ (1,0) [0|0] ""  VCU
