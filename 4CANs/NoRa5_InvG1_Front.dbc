@@ -36,13 +36,13 @@ BS_:
 BU_: AMK_INV_1 AMK_INV_2 VCU
 
 
-BO_ 647 msg_INV2_ActVal2: 8 AMK_INV_2
+BO_ 646 msg_INV2_ActVal2: 8 AMK_INV_2
  SG_ sig_INV2_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV2_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV2_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV2_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
 
-BO_ 645 msg_INV2_ActVal1: 8 AMK_INV_2
+BO_ 644 msg_INV2_ActVal1: 8 AMK_INV_2
  SG_ sig_INV2_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
  SG_ sig_INV2_ActVal1_MagnetzCur : 48|16@1- (1,0) [0|0] ""  VCU
  SG_ sig_INV2_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
@@ -56,7 +56,7 @@ BO_ 645 msg_INV2_ActVal1: 8 AMK_INV_2
  SG_ sig_INV2_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_INV2_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  VCU
 
-BO_ 390 msg_INV2_SetVal1: 8 VCU
+BO_ 389 msg_INV2_SetVal1: 8 VCU
  SG_ sig_INV2_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_2
  SG_ sig_INV2_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_2
  SG_ sig_INV2_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_2
@@ -67,7 +67,7 @@ BO_ 390 msg_INV2_SetVal1: 8 VCU
  SG_ sig_INV2_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  AMK_INV_2
  SG_ sig_INV2_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  AMK_INV_2
 
-BO_ 389 msg_INV1_SetVal1: 8 VCU
+BO_ 388 msg_INV1_SetVal1: 8 VCU
  SG_ sig_INV1_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_1
  SG_ sig_INV1_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_1
  SG_ sig_INV1_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_1
@@ -78,13 +78,13 @@ BO_ 389 msg_INV1_SetVal1: 8 VCU
  SG_ sig_INV1_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  AMK_INV_1
  SG_ sig_INV1_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  AMK_INV_1
 
-BO_ 646 msg_INV1_ActVal2: 8 AMK_INV_1
+BO_ 645 msg_INV1_ActVal2: 8 AMK_INV_1
  SG_ sig_INV1_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV1_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV1_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  VCU
  SG_ sig_INV1_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
 
-BO_ 644 msg_INV1_ActVal1: 8 AMK_INV_1
+BO_ 643 msg_INV1_ActVal1: 8 AMK_INV_1
  SG_ sig_INV1_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
  SG_ sig_INV1_ActVal1_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  VCU
  SG_ sig_INV1_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
@@ -105,57 +105,57 @@ Erstellung
 
 04.03.18 Alexey T: 
 Steuergeräte VCU und AMK_INV wurden hinzugefügt, Tx Botschaften zu Geräten zugewiesen";
-CM_ SG_ 647 sig_INV2_ActVal2_TempMotor "Motortemperatur";
-CM_ SG_ 647 sig_INV2_ActVal2_TempInverter "Coldplate-Temperatur";
-CM_ SG_ 647 sig_INV2_ActVal2_TempIGBT "IGBT Temperatur";
-CM_ SG_ 647 sig_INV2_ActVal2_ErrorInfo "Diagnosenummer";
-CM_ SG_ 645 sig_INV2_ActVal1_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
-CM_ SG_ 645 sig_INV2_ActVal1_MagnetzCur "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
-CM_ SG_ 645 sig_INV2_ActVal1_bWarn "Warnung";
-CM_ SG_ 645 sig_INV2_ActVal1_bSystemReady "System bereit (SBM)";
-CM_ SG_ 645 sig_INV2_ActVal1_bReserve "Reserviert";
-CM_ SG_ 645 sig_INV2_ActVal1_bQuitInverterOn "Quittierung Reglerfreigabe";
-CM_ SG_ 645 sig_INV2_ActVal1_bQuitDcOn "Quittierung HV-Freischaltung";
-CM_ SG_ 645 sig_INV2_ActVal1_bInverterOn "Spiegel Reglerfreigabe";
-CM_ SG_ 645 sig_INV2_ActVal1_bError "Fehler";
-CM_ SG_ 645 sig_INV2_ActVal1_bDerating "Derating (Momentbegrenzung aktiv)";
-CM_ SG_ 645 sig_INV2_ActVal1_bDcOn "Spiegel HV-Freischaltung";
-CM_ SG_ 645 sig_INV2_ActVal1_ActualVelocity "Drehzahlsollwert
+CM_ SG_ 646 sig_INV2_ActVal2_TempMotor "Motortemperatur";
+CM_ SG_ 646 sig_INV2_ActVal2_TempInverter "Coldplate-Temperatur";
+CM_ SG_ 646 sig_INV2_ActVal2_TempIGBT "IGBT Temperatur";
+CM_ SG_ 646 sig_INV2_ActVal2_ErrorInfo "Diagnosenummer";
+CM_ SG_ 644 sig_INV2_ActVal1_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 644 sig_INV2_ActVal1_MagnetzCur "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 644 sig_INV2_ActVal1_bWarn "Warnung";
+CM_ SG_ 644 sig_INV2_ActVal1_bSystemReady "System bereit (SBM)";
+CM_ SG_ 644 sig_INV2_ActVal1_bReserve "Reserviert";
+CM_ SG_ 644 sig_INV2_ActVal1_bQuitInverterOn "Quittierung Reglerfreigabe";
+CM_ SG_ 644 sig_INV2_ActVal1_bQuitDcOn "Quittierung HV-Freischaltung";
+CM_ SG_ 644 sig_INV2_ActVal1_bInverterOn "Spiegel Reglerfreigabe";
+CM_ SG_ 644 sig_INV2_ActVal1_bError "Fehler";
+CM_ SG_ 644 sig_INV2_ActVal1_bDerating "Derating (Momentbegrenzung aktiv)";
+CM_ SG_ 644 sig_INV2_ActVal1_bDcOn "Spiegel HV-Freischaltung";
+CM_ SG_ 644 sig_INV2_ActVal1_ActualVelocity "Drehzahlsollwert
 ";
-CM_ SG_ 390 sig_INV2_SetVal1_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
-CM_ SG_ 390 sig_INV2_SetVal1_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
-CM_ SG_ 390 sig_INV2_SetVal1_TargetVelocity "Drehzahlsollwert";
-CM_ SG_ 390 sig_INV2_SetVal1_bReserve1 "Reserviert";
-CM_ SG_ 390 sig_INV2_SetVal1_bReserve0 "Reserviert";
-CM_ SG_ 390 sig_INV2_SetVal1_bInverterOn "Reglerfreigabe";
-CM_ SG_ 390 sig_INV2_SetVal1_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
-CM_ SG_ 390 sig_INV2_SetVal1_bEnable "Antrieb Freigabe";
-CM_ SG_ 390 sig_INV2_SetVal1_bDcOn "HV-Freischaltung";
-CM_ SG_ 389 sig_INV1_SetVal1_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
-CM_ SG_ 389 sig_INV1_SetVal1_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
-CM_ SG_ 389 sig_INV1_SetVal1_TargetVelocity "Drehzahlsollwert";
-CM_ SG_ 389 sig_INV1_SetVal1_bReserve1 "Reserviert";
-CM_ SG_ 389 sig_INV1_SetVal1_bReserve0 "Reserviert";
-CM_ SG_ 389 sig_INV1_SetVal1_bInverterOn "Reglerfreigabe";
-CM_ SG_ 389 sig_INV1_SetVal1_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
-CM_ SG_ 389 sig_INV1_SetVal1_bEnable "Antrieb Freigabe";
-CM_ SG_ 389 sig_INV1_SetVal1_bDcOn "HV-Freischaltung";
-CM_ SG_ 646 sig_INV1_ActVal2_TempMotor "Motortemperatur";
-CM_ SG_ 646 sig_INV1_ActVal2_TempInverter "Coldplate-Temperatur";
-CM_ SG_ 646 sig_INV1_ActVal2_TempIGBT "IGBT Temperatur";
-CM_ SG_ 646 sig_INV1_ActVal2_ErrorInfo "Diagnosenummer";
-CM_ SG_ 644 sig_INV1_ActVal1_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
-CM_ SG_ 644 sig_INV1_ActVal1_MagnetizingCurr "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
-CM_ SG_ 644 sig_INV1_ActVal1_bWarn "Warnung";
-CM_ SG_ 644 sig_INV1_ActVal1_bSystemReady "System bereit (SBM)";
-CM_ SG_ 644 sig_INV1_ActVal1_bReserve "Reserviert";
-CM_ SG_ 644 sig_INV1_ActVal1_bQuitInverterOn "Quittierung Reglerfreigabe";
-CM_ SG_ 644 sig_INV1_ActVal1_bQuitDcOn "Quittierung HV-Freischaltung";
-CM_ SG_ 644 sig_INV1_ActVal1_bInverterOn "Spiegel Reglerfreigabe";
-CM_ SG_ 644 sig_INV1_ActVal1_bError "Fehler";
-CM_ SG_ 644 sig_INV1_ActVal1_bDerating "Derating (Momentbegrenzung aktiv)";
-CM_ SG_ 644 sig_INV1_ActVal1_bDcOn "Spiegel HV-Freischaltung";
-CM_ SG_ 644 sig_INV1_ActVal1_ActualVelocity "Drehzahlsollwert
+CM_ SG_ 389 sig_INV2_SetVal1_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
+CM_ SG_ 389 sig_INV2_SetVal1_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
+CM_ SG_ 389 sig_INV2_SetVal1_TargetVelocity "Drehzahlsollwert";
+CM_ SG_ 389 sig_INV2_SetVal1_bReserve1 "Reserviert";
+CM_ SG_ 389 sig_INV2_SetVal1_bReserve0 "Reserviert";
+CM_ SG_ 389 sig_INV2_SetVal1_bInverterOn "Reglerfreigabe";
+CM_ SG_ 389 sig_INV2_SetVal1_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
+CM_ SG_ 389 sig_INV2_SetVal1_bEnable "Antrieb Freigabe";
+CM_ SG_ 389 sig_INV2_SetVal1_bDcOn "HV-Freischaltung";
+CM_ SG_ 388 sig_INV1_SetVal1_TorqueLimitPos "Momentgrenze positiv (abhängig vom Nennmoment)";
+CM_ SG_ 388 sig_INV1_SetVal1_TorqueLimitNeg "Momentgrenze negativ (abhängig vom Nennmoment)";
+CM_ SG_ 388 sig_INV1_SetVal1_TargetVelocity "Drehzahlsollwert";
+CM_ SG_ 388 sig_INV1_SetVal1_bReserve1 "Reserviert";
+CM_ SG_ 388 sig_INV1_SetVal1_bReserve0 "Reserviert";
+CM_ SG_ 388 sig_INV1_SetVal1_bInverterOn "Reglerfreigabe";
+CM_ SG_ 388 sig_INV1_SetVal1_bErrorReset "Fehler löschen (Sollwerte müssen den Wert 0 haben, sonst wird 'Fehler löschen' nicht ausgeführt)";
+CM_ SG_ 388 sig_INV1_SetVal1_bEnable "Antrieb Freigabe";
+CM_ SG_ 388 sig_INV1_SetVal1_bDcOn "HV-Freischaltung";
+CM_ SG_ 645 sig_INV1_ActVal2_TempMotor "Motortemperatur";
+CM_ SG_ 645 sig_INV1_ActVal2_TempInverter "Coldplate-Temperatur";
+CM_ SG_ 645 sig_INV1_ActVal2_TempIGBT "IGBT Temperatur";
+CM_ SG_ 645 sig_INV1_ActVal2_ErrorInfo "Diagnosenummer";
+CM_ SG_ 643 sig_INV1_ActVal1_TorqueCurrent "Rohdaten zur Berechnung 'Istwert Drehmoment bildender Strom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 643 sig_INV1_ActVal1_MagnetizingCurr "Rohdaten zur Berechnung 'Istwert Magnetisierungsstrom': Siehe 'Einheiten' auf Seite 63.";
+CM_ SG_ 643 sig_INV1_ActVal1_bWarn "Warnung";
+CM_ SG_ 643 sig_INV1_ActVal1_bSystemReady "System bereit (SBM)";
+CM_ SG_ 643 sig_INV1_ActVal1_bReserve "Reserviert";
+CM_ SG_ 643 sig_INV1_ActVal1_bQuitInverterOn "Quittierung Reglerfreigabe";
+CM_ SG_ 643 sig_INV1_ActVal1_bQuitDcOn "Quittierung HV-Freischaltung";
+CM_ SG_ 643 sig_INV1_ActVal1_bInverterOn "Spiegel Reglerfreigabe";
+CM_ SG_ 643 sig_INV1_ActVal1_bError "Fehler";
+CM_ SG_ 643 sig_INV1_ActVal1_bDerating "Derating (Momentbegrenzung aktiv)";
+CM_ SG_ 643 sig_INV1_ActVal1_bDcOn "Spiegel HV-Freischaltung";
+CM_ SG_ 643 sig_INV1_ActVal1_ActualVelocity "Drehzahlsollwert
 ";
 BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
 BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
