@@ -39,6 +39,44 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1544 msg_VCUAMS_AvgSumVoltTemp: 8 VCU
+ SG_ sig_AMS_SumVoltage : 32|16@1+ (0.01,0) [0|655.35] ""  Dashboard
+ SG_ sig_AMS_AvgTemp : 16|16@1+ (0.001,0) [0|65.535] ""  Dashboard
+ SG_ sig_AMK_AvgVoltage : 0|16@1+ (0.0001,0) [0|6.5535] ""  Dashboard
+
+BO_ 1543 msg_VCUAMS_MinMaxTemp: 8 VCU
+ SG_ sig_AMS_MaxTemp_CNT : 56|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MaxTemp_ID : 48|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MinTemp_CNT : 24|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MinTemp_ID : 16|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MinTemp : 0|16@1+ (0.001,0) [0|65.535] ""  Dashboard
+ SG_ sig_AMS_MaxTemp : 32|16@1+ (0.001,0) [0|65.535] ""  Dashboard
+
+BO_ 1542 msg_VCUAMS_MinMaxVoltage: 8 VCU
+ SG_ sig_AMS_MaxVoltage_CNT : 56|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MaxVoltage_ID : 48|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MinVoltage_CNT : 24|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MinVoltage_ID : 16|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_AMS_MaxVoltage : 32|16@1+ (0.0001,0) [0|6.5535] "V"  Dashboard
+ SG_ sig_AMS_MinVoltage : 0|16@1+ (0.0001,0) [0|6.5535] "V"  Dashboard
+
+BO_ 1541 msg_VCUAMS_States: 8 VCU
+ SG_ sig_AMS_BRAKE_PLAUSIBLE : 9|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_IMD_OK : 15|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_PI_BREAK_PRESSURE : 14|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_PI_HW_AIR_OFF : 13|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_P_ABOVE_5KW : 12|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_PI_TSAL : 11|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_PO_AIR_ENABLE : 10|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_SafetyCircuit_OK : 8|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_GlobalEnable : 6|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_Balancing_Active : 5|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_ChargingActive : 4|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_MainRelaisClosed : 3|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_Connection2Slave : 2|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_error_U_detected : 1|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_error_T_detected : 0|1@1+ (1,0) [0|1] ""  Dashboard
+
 BO_ 1539 msg_VCU_TorqueVectoring: 8 VCU
  SG_ sig_VCU_PowerLimitToTV : 8|8@1+ (1,0) [0|255] ""  Dashboard
  SG_ sig_VCU_TV_onlyRear : 17|1@1+ (1,0) [0|1] ""  Dashboard
@@ -274,13 +312,13 @@ BO_ 564 msg_VCU_cmd_Distri: 1 VCU
 
 BO_ 1286 msg_DistriStatus1: 8 Distri
  SG_ sig_Distri_SC_OK : 7|1@1+ (1,0) [0|0] ""  VCU
- SG_ sig_Distri_SC_faultMember : 56|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent7_SC : 48|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent56_DCDCsum : 40|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent4_TSAL : 32|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent3_InvG2 : 24|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent2_InvG1 : 16|8@1- (1,0) [0|0] ""  VCU
- SG_ sig_DistriCurrent1_VCU : 8|8@1- (1,0) [0|0] ""  VCU
+ SG_ sig_Distri_SC_faultMember : 56|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent7_SC : 48|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent56_DCDCsum : 40|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent4_TSAL : 32|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent3_InvG2 : 24|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent2_InvG1 : 16|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_DistriCurrent1_VCU : 8|8@1+ (1,0) [0|255] ""  VCU
  SG_ sig_Distri_F7_ShutdownC_OK : 6|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Distri_F6_DCDCp2_OK : 5|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Distri_F5_DCDCp1OK : 4|1@1+ (1,0) [0|0] ""  VCU
@@ -296,66 +334,66 @@ BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
  SG_ sig_PIC_breaking : 8|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
  SG_ sig_PIC_acceleration : 0|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
  SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ sig_PIC_TorquePlausible : 17|1@0+ (1,0) [0|1] ""  VCU
- SG_ sig_PIC_BreakPlausible : 16|1@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_PIC_TorquePlausible : 22|1@1+ (1,0) [0|1] ""  VCU
+ SG_ sig_PIC_BreakPlausible : 23|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
- SG_ sig_WaterFlow1 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_WaterFlow1 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 561 msg_VCU_Alive: 1 VCU
- SG_ sig_VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_VCU_Alive_Signal : 7|1@1+ (1,0) [0|0] ""  Dashboard
 
 BO_ 657 msg_PIC_TorqueAndBreak: 5 PedalIntegratedCircuit
- SG_ sig_PIC_BreakPressure2 : 39|8@0+ (1,0) [0|255] ""  VCU
- SG_ sig_PIC_BreakPressure1 : 31|8@0+ (1,0) [0|255] ""  VCU
- SG_ sig_PIC_BreakPedal1 : 23|8@0+ (1,0) [0|255] ""  VCU
- SG_ sig_TorquePedal2 : 15|8@0+ (1,0) [0|255] ""  VCU
- SG_ sig_TorquePedal1 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_PIC_BreakPressure2 : 32|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_PIC_BreakPressure1 : 24|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_PIC_BreakPedal1 : 16|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TorquePedal2 : 8|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TorquePedal1 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 800 msg_SS_CMD_BrakeLight: 1 VCU
- SG_ sig_cmd_SetBrakeLight : 0|1@0+ (1,0) [0|0] ""  SS_BreakLight
+ SG_ sig_cmd_SetBrakeLight : 7|1@1+ (1,0) [0|0] ""  SS_BreakLight
 
 BO_ 801 msg_SS_CMD_RTDS: 1 VCU
- SG_ sig_SetRTDS : 0|1@0+ (1,0) [0|0] ""  SS_RTDS
+ SG_ sig_SetRTDS : 7|1@1+ (1,0) [0|0] ""  SS_RTDS
 
 BO_ 802 msg_SS_CMD_WaterPump1: 1 VCU
- SG_ sig_WaterPump1_ON : 0|1@0+ (1,0) [0|0] ""  SS_WaterPump1
+ SG_ sig_WaterPump1_ON : 7|1@1+ (1,0) [0|0] ""  SS_WaterPump1
 
 BO_ 803 msg_SS_CMD_WaterPump2: 1 VCU
- SG_ sig_WaterPump2_ON : 0|1@0+ (1,0) [0|0] ""  SS_WaterPump2
+ SG_ sig_WaterPump2_ON : 7|1@1+ (1,0) [0|0] ""  SS_WaterPump2
 
 BO_ 848 msg_SS_Deflection_FL: 2 SS_DFL
- SG_ sig_DeflectionFrontLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
+ SG_ sig_DeflectionFrontLeft : 0|16@1- (1,0) [-32768|32767] ""  VCU
 
 BO_ 849 msg_SS_Deflection_FR: 2 SS_DFR
- SG_ sig_DeflectionFrontRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
+ SG_ sig_DeflectionFrontRight : 0|16@1- (1,0) [-32768|32767] ""  VCU
 
 BO_ 850 msg_SS_Deflection_RL: 2 SS_DRL
- SG_ sig_DeflectionRearLeft : 7|16@0- (1,0) [-32768|32767] ""  VCU
+ SG_ sig_DeflectionRearLeft : 0|16@1- (1,0) [-32768|32767] ""  VCU
 
 BO_ 851 msg_SS_Deflection_RR: 2 SS_DRR
- SG_ sig_DeflectionRearRight : 7|16@0- (1,0) [-32768|32767] ""  VCU
+ SG_ sig_DeflectionRearRight : 0|16@1- (1,0) [-32768|32767] ""  VCU
 
 BO_ 852 msg_SS_SteeringAngle: 2 SS_SteeringAngle
  SG_ sig_SteeringAngle : 0|16@1- (0.00549333170567949,0) [-180.005493331706|180] ""  VCU
 
 BO_ 864 msg_SS_WaterTemp1: 1 SS_WaterTemperature1
- SG_ sig_TemperatureWater1 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TemperatureWater1 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 865 msg_SS_WaterTemp2: 1 SS_WaterTemperature2
- SG_ sig_TemperatureWater2 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TemperatureWater2 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 866 msg_SS_WaterTemp3: 1 SS_WaterTemperature3
- SG_ sig_TemperatureWater3 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TemperatureWater3 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 867 msg_SS_WaterTemp4: 1 SS_WaterTemperature4
- SG_ sig_TemperatureWater4 : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_TemperatureWater4 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 868 msg_SS_WaterPump1: 1 SS_WaterPump1
- SG_ sig_WaterPump1_State : 0|1@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_WaterPump1_State : 7|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 869 msg_SS_WaterPump2: 1 SS_WaterPump2
- SG_ sig_WaterPump2_State : 0|1@0+ (1,0) [0|0] ""  VCU
+ SG_ sig_WaterPump2_State : 7|1@1+ (1,0) [0|0] ""  VCU
 
 
 
