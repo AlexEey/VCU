@@ -39,6 +39,28 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1539 msg_VCU_TorqueVectoring: 8 VCU
+ SG_ sig_VCU_PowerLimitToTV : 8|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_VCU_TV_onlyRear : 17|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCU_TV_onlyFront : 16|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_TV_State : 0|8@1+ (1,0) [0|255] ""  Dashboard
+
+BO_ 1537 msg_VCU_intern_InvStates: 8 VCU
+ SG_ sig_VCUintern_StateInv4 : 24|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_VCUintern_StateInv3 : 16|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_VCUintern_StateInv2 : 8|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_VCUintern_StateInv1 : 0|8@1+ (1,0) [0|255] ""  Dashboard
+
+BO_ 1536 msg_VCU_intern_States: 8 VCU
+ SG_ sig_VCUintern_Recuperating : 21|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_RecuEnabled : 20|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_HydraulicBrakeON : 18|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_EnableInverters : 19|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_SystemApproval : 16|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_PIC_Alive : 17|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_VCUErrorCode : 8|8@1+ (1,0) [0|255] ""  Dashboard
+ SG_ sig_VCUintern_SystemState : 0|8@1+ (1,0) [0|255] ""  Dashboard
+
 BO_ 1579 msg_INV4_ActVal2: 8 VCU
  SG_ sig_INV4_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  Dashboard
  SG_ sig_INV4_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  Dashboard
