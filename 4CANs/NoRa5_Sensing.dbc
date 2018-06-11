@@ -39,6 +39,130 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1579 msg_INV4_ActVal2: 8 VCU
+ SG_ sig_INV4_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV4_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV4_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV4_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1578 msg_INV4_ActVal1: 8 VCU
+ SG_ sig_INV4_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_ActVal1_MagnetzCur : 48|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bInverterOn : 14|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV4_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+
+BO_ 1577 msg_INV4_SetVal1: 8 VCU
+ SG_ sig_INV4_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV4_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV4_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+ SG_ sig_INV4_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_SetVal1_bInverterOn : 8|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_SetVal1_bErrorReset : 11|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV4_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1574 msg_INV3_SetVal1: 8 VCU
+ SG_ sig_INV3_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV3_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV3_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+ SG_ sig_INV3_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_SetVal1_bInverterOn : 8|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_SetVal1_bErrorReset : 11|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1576 msg_INV3_ActVal2: 8 VCU
+ SG_ sig_INV3_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV3_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV3_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV3_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1575 msg_INV3_ActVal1: 8 VCU
+ SG_ sig_INV3_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_ActVal1_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bInverterOn : 14|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV3_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV3_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+
+BO_ 1573 msg_INV2_ActVal2: 8 VCU
+ SG_ sig_INV2_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV2_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV2_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV2_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1572 msg_INV2_ActVal1: 8 VCU
+ SG_ sig_INV2_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_ActVal1_MagnetzCur : 48|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bInverterOn : 14|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV2_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+
+BO_ 1571 msg_INV2_SetVal1: 8 VCU
+ SG_ sig_INV2_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV2_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV2_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+ SG_ sig_INV2_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_SetVal1_bInverterOn : 8|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_SetVal1_bErrorReset : 11|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV2_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1568 msg_INV1_SetVal1: 8 VCU
+ SG_ sig_INV1_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV1_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  Dashboard
+ SG_ sig_INV1_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+ SG_ sig_INV1_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_SetVal1_bInverterOn : 8|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_SetVal1_bErrorReset : 11|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_SetVal1_bEnable : 10|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1570 msg_INV1_ActVal2: 8 VCU
+ SG_ sig_INV1_ActVal2_TempMotor : 0|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV1_ActVal2_TempInverter : 16|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV1_ActVal2_TempIGBT : 48|16@1- (0.1,0) [0|0] "°C"  Dashboard
+ SG_ sig_INV1_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  Dashboard
+
+BO_ 1569 msg_INV1_ActVal1: 8 VCU
+ SG_ sig_INV1_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_ActVal1_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bQuitInverterOn : 13|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bQuitDcOn : 11|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bInverterOn : 14|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_INV1_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_INV1_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  Dashboard
+
 BO_ 1061 msg_Calibrate_SS365: 1 VCU
  SG_ sig_Calibrate_SS365 : 0|1@1+ (1,0) [0|0] ""  SS_WaterPump2
 
