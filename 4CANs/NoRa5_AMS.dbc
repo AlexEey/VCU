@@ -37,7 +37,7 @@ BU_: VCU Telemetry ISA_Scale AMS User
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
-BO_ 520 msg_AMS_AvgSumVoltageTemp: 8 VCU
+BO_ 520 msg_AMS_AvgSumVoltageTemp: 6 AMS
  SG_ sig_AMS_SumVoltage : 39|16@0+ (0.01,0) [0|655.35] ""  VCU
  SG_ sig_AMS_AvgTemp : 23|16@0+ (0.001,0) [0|65.535] ""  VCU
  SG_ sig_AMK_AvgVoltage : 7|16@0+ (0.0001,0) [0|6.5535] ""  VCU
@@ -756,7 +756,7 @@ BO_ 562 msg_VCU_Cmd_AmsOptions1: 1 VCU
  SG_ sig_cmd_AMSoption4 : 3|1@1+ (1,0) [0|0] ""  AMS
  SG_ sig_cmd_AMSoption3 : 2|1@1+ (1,0) [0|0] ""  AMS
  SG_ sig_cmd_AMSoption2 : 1|1@1+ (1,0) [0|0] ""  AMS
- SG_ sig_cmd_AMSoption1 : 0|1@1+ (1,0) [0|0] ""  AMS
+ SG_ sig_cmd_AMS_TractiveSystem_ON : 0|1@1+ (1,0) [0|0] ""  AMS
 
 
 
