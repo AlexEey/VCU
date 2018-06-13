@@ -90,6 +90,8 @@ BO_ 1537 msg_VCU_intern_InvStates: 8 VCU
  SG_ sig_VCUintern_StateInv1 : 0|8@1+ (1,0) [0|255] ""  Dashboard
 
 BO_ 1536 msg_VCU_intern_States: 8 VCU
+ SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_VCUintern_Recuperating : 21|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_RecuEnabled : 20|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_HydraulicBrakeON : 18|1@1+ (1,0) [0|1] ""  Dashboard
