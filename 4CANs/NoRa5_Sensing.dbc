@@ -397,8 +397,10 @@ BO_ 868 msg_SS_WaterPump1: 1 SS_WaterPump1
 BO_ 869 msg_SS_WaterPump2: 1 SS_WaterPump2
  SG_ sig_WaterPump2_State : 7|1@1+ (1,0) [0|0] ""  VCU
 
-BO_TX_BU_ 800 : SS_BreakLight,VCU;
-BO_TX_BU_ 801 : SS_RTDS,VCU;
+BO_TX_BU_ 800 : User,VCU;
+BO_TX_BU_ 801 : User,VCU;
+BO_TX_BU_ 802 : User,VCU;
+BO_TX_BU_ 803 : User,VCU;
 
 
 CM_ BU_ SS_WaterTemperature4 "SmartSensor Water Temperature 4";
