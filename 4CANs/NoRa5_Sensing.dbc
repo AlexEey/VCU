@@ -60,16 +60,17 @@ BO_ 1542 msg_VCUAMS_MinMaxVoltage: 8 VCU
  SG_ sig_AMS_MaxVoltage : 32|16@1+ (0.0001,0) [0|6.5535] "V"  Dashboard
  SG_ sig_AMS_MinVoltage : 0|16@1+ (0.0001,0) [0|6.5535] "V"  Dashboard
 
-BO_ 1541 msg_VCUAMS_States: 8 VCU
- SG_ sig_AMS_BRAKE_PLAUSIBLE : 9|1@1+ (1,0) [0|1] ""  Dashboard
- SG_ sig_AMS_IMD_OK : 15|1@1+ (1,0) [0|1] ""  Dashboard
- SG_ sig_AMS_PI_BREAK_PRESSURE : 14|1@1+ (1,0) [0|1] ""  Dashboard
+BO_ 1541 msg_VCUAMS_States: 3 VCU
+ SG_ sig_AMS_ErrorMemory : 14|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_AMS_TractiveSystemDetected : 9|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_AMS_VCUalive_detected : 6|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_AMS_IMD_FAULT : 15|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_PI_HW_AIR_OFF : 13|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_P_ABOVE_5KW : 12|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_PI_TSAL : 11|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_PO_AIR_ENABLE : 10|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_SafetyCircuit_OK : 8|1@1+ (1,0) [0|1] ""  Dashboard
- SG_ sig_AMS_GlobalEnable : 6|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_AMS_GlobalEnable : 7|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_Balancing_Active : 5|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_ChargingActive : 4|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_AMS_MainRelaisClosed : 3|1@1+ (1,0) [0|1] ""  Dashboard
