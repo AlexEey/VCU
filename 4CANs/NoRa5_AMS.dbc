@@ -424,7 +424,8 @@ BO_ 1281 msg_AMS_Temps: 7 AMS
  SG_ Temp_Cell_001 m0 : 15|16@0+ (0.001,0) [0|65.535] "°C"  VCU
  SG_ Multiplexor_Temp M : 7|8@0+ (1,0) [0|35] ""  VCU
 
-BO_ 512 msg_AMS_Status: 1 AMS
+BO_ 512 msg_AMS_Status: 2 AMS
+ SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ error_U_detected : 1|1@0+ (1,0) [0|0] ""  VCU
  SG_ error_T_detected : 0|1@0+ (1,0) [0|0] ""  VCU
  SG_ Connection2Slaves : 2|1@0+ (1,0) [0|0] ""  VCU
@@ -436,7 +437,8 @@ BO_ 512 msg_AMS_Status: 1 AMS
 BO_ 514 msg_AMS_Alive: 1 AMS
  SG_ AMS_Alive : 0|1@0+ (1,0) [0|0] ""  VCU
 
-BO_ 528 msg_AMS_CPU_IO_STATES: 1 AMS
+BO_ 528 msg_AMS_CPU_IO_STATES: 2 AMS
+ SG_ PI_TractiveSystem_detected : 1|1@1+ (1,0) [0|1] ""  VCU
  SG_ PI_AMS_ERROR_MEMORY : 6|1@1+ (1,0) [0|1] ""  VCU
  SG_ Safety_Circuit_OK : 0|1@0+ (1,0) [0|0] ""  VCU
  SG_ PO_AIR_ENABLE : 2|1@0+ (1,0) [0|0] ""  VCU
