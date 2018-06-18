@@ -445,7 +445,7 @@ BO_ 528 msg_AMS_CPU_IO_STATES: 1 AMS
  SG_ PI_TSAL : 3|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_P_ABOVE_5KW : 4|1@0+ (1,0) [0|0] ""  VCU
  SG_ PI_HW_AIR_OFF : 5|1@0+ (1,0) [0|0] ""  VCU
- SG_ PI_IMD_FAULT_MEMORY : 7|1@0+ (1,0) [0|0] ""  VCU
+ SG_ PI_IMD_ERROR_MEMORY : 7|1@0+ (1,0) [0|0] ""  VCU
 
 BO_ 517 msg_AMS_Options: 1 AMS
  SG_ Option_7 : 0|1@0+ (1,0) [0|0] ""  VCU
@@ -457,7 +457,8 @@ BO_ 517 msg_AMS_Options: 1 AMS
  SG_ Option_1 : 6|1@0+ (1,0) [0|0] ""  VCU
  SG_ Option_0 : 7|1@0+ (1,0) [0|0] ""  VCU
 
-BO_ 561 msg_VCU_Alive: 1 VCU
+BO_ 561 msg_VCU_Alive: 2 VCU
+ SG_ Allow_Shutdown_TS : 2|1@1+ (1,0) [0|1] ""  AMS
  SG_ TractiveSystem_Enable_TEST : 1|1@1+ (1,0) [0|1] ""  AMS
  SG_ VCU_Alive_Signal : 0|1@0+ (1,0) [0|0] ""  AMS
 
