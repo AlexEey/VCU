@@ -43,8 +43,8 @@ BO_ 648 msg_INV4_ActVal2: 8 AMK_INV_4
  SG_ sig_INV4_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
 
 BO_ 646 msg_INV4_ActVal1: 8 AMK_INV_4
- SG_ sig_INV4_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
- SG_ sig_INV4_ActVal1_MagnetzCur : 48|16@1- (1,0) [0|0] ""  VCU
+ SG_ sig_INV4_ActVal1_TorqueCurrent : 32|16@1- (0.00654296875,0) [-214.4|214.39345703125] ""  VCU
+ SG_ sig_INV4_ActVal1_MagnetzCur : 48|16@1- (0.00654296875,0) [-214.4|214.39345703125] ""  VCU
  SG_ sig_INV4_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV4_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV4_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  VCU
@@ -54,11 +54,11 @@ BO_ 646 msg_INV4_ActVal1: 8 AMK_INV_4
  SG_ sig_INV4_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV4_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV4_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  VCU
- SG_ sig_INV4_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  VCU
+ SG_ sig_INV4_ActVal1_ActualVelocity : 16|16@1- (1,0) [-32768|32767] "rpm"  VCU
 
 BO_ 391 msg_INV4_SetVal1: 8 VCU
- SG_ sig_INV4_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_4
- SG_ sig_INV4_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_4
+ SG_ sig_INV4_SetVal1_TorqueLimitPos : 32|16@1- (0.1,0) [0|0] "Nm"  AMK_INV_4
+ SG_ sig_INV4_SetVal1_TorqueLimitNeg : 48|16@1- (0.1,0) [0|0] "Nm"  AMK_INV_4
  SG_ sig_INV4_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_4
  SG_ sig_INV4_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  AMK_INV_4
  SG_ sig_INV4_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  AMK_INV_4
@@ -68,8 +68,8 @@ BO_ 391 msg_INV4_SetVal1: 8 VCU
  SG_ sig_INV4_SetVal1_bDcOn : 9|1@1+ (1,0) [0|0] ""  AMK_INV_4
 
 BO_ 390 msg_INV3_SetVal1: 8 VCU
- SG_ sig_INV3_SetVal1_TorqueLimitPos : 32|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_3
- SG_ sig_INV3_SetVal1_TorqueLimitNeg : 48|16@1- (0.0098,0) [0|0] "Nm"  AMK_INV_3
+ SG_ sig_INV3_SetVal1_TorqueLimitPos : 32|16@1- (0.1,0) [-3276.8|3276.7] "Nm"  AMK_INV_3
+ SG_ sig_INV3_SetVal1_TorqueLimitNeg : 48|16@1- (0.1,0) [-3276.8|3276.7] "Nm"  AMK_INV_3
  SG_ sig_INV3_SetVal1_TargetVelocity : 16|16@1- (1,0) [0|0] "rpm"  AMK_INV_3
  SG_ sig_INV3_SetVal1_bReserve1 : 12|4@1+ (1,0) [0|0] ""  AMK_INV_3
  SG_ sig_INV3_SetVal1_bReserve0 : 0|8@1+ (1,0) [0|0] ""  AMK_INV_3
@@ -85,8 +85,8 @@ BO_ 647 msg_INV3_ActVal2: 8 AMK_INV_3
  SG_ sig_INV3_ActVal2_ErrorInfo : 32|16@1+ (1,0) [0|0] ""  VCU
 
 BO_ 645 msg_INV3_ActVal1: 8 AMK_INV_3
- SG_ sig_INV3_ActVal1_TorqueCurrent : 32|16@1- (1,0) [0|0] ""  VCU
- SG_ sig_INV3_ActVal1_MagnetizingCurr : 48|16@1- (1,0) [0|0] ""  VCU
+ SG_ sig_INV3_ActVal1_TorqueCurrent : 32|16@1- (0.00654296875,0) [-214.4|214.39345703125] ""  VCU
+ SG_ sig_INV3_ActVal1_MagnetizingCurr : 48|16@1- (0.00654296875,0) [-214.4|214.39345703125] ""  VCU
  SG_ sig_INV3_ActVal1_bWarn : 10|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV3_ActVal1_bSystemReady : 8|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV3_ActVal1_bReserve : 0|8@1- (1,0) [0|0] ""  VCU
@@ -96,7 +96,7 @@ BO_ 645 msg_INV3_ActVal1: 8 AMK_INV_3
  SG_ sig_INV3_ActVal1_bError : 9|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV3_ActVal1_bDerating : 15|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_INV3_ActVal1_bDcOn : 12|1@1+ (1,0) [0|0] ""  VCU
- SG_ sig_INV3_ActVal1_ActualVelocity : 16|16@1- (1,0) [0|0] "rpm"  VCU
+ SG_ sig_INV3_ActVal1_ActualVelocity : 16|16@1- (1,0) [-32768|32767] "rpm"  VCU
 
 
 
