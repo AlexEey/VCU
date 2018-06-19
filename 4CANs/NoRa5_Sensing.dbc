@@ -334,8 +334,8 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  PedalIntegratedCircuit
 
 BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
- SG_ sig_PIC_breaking : 8|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
- SG_ sig_PIC_acceleration : 0|8@1+ (0.392156862745098,0) [0|100] "" Vector__XXX
+ SG_ sig_PIC_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_PIC_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_PIC_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_PIC_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
