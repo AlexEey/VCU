@@ -336,7 +336,9 @@ BO_ 1286 msg_DistriStatus1: 8 Distri
 BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  TorqueRequestPCB
 
-BO_ 656 msg_TRP_DriveValue: 3 TorqueRequestPCB
+BO_ 656 msg_TRP_DriveValue: 5 TorqueRequestPCB
+ SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] "bar" Vector__XXX
+ SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] "bar" Vector__XXX
  SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -348,13 +350,6 @@ BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
 
 BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ sig_VCU_Alive_Signal : 0|1@1+ (1,0) [0|0] ""  Dashboard
-
-BO_ 657 msg_PIC_TorqueAndBreak: 5 TorqueRequestPCB
- SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_TRP_BreakPedal1 : 16|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_TorquePedal2 : 8|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_TorquePedal1 : 0|8@1+ (1,0) [0|255] ""  VCU
 
 BO_ 800 msg_SS_CMD_BrakeLight: 1 VCU
  SG_ sig_cmd_SetBrakeLight : 0|1@1+ (1,0) [0|0] ""  SS_BreakLight
