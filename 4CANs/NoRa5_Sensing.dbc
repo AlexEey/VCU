@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: SmartSensor SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow1 SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DRR SS_DRL VCU User Telemetry SS_BreakLight PedalIntegratedCircuit Distri Dashboard AclrGPS
+BU_: SmartSensor SS_WaterTemperature4 SS_WaterTemperature3 SS_WaterTemperature2 SS_WaterTemperature1 SS_WaterPump2 SS_WaterPump1 SS_WaterFlow1 SS_SteeringAngle SS_RTDS SS_DFR SS_DFL SS_DRR SS_DRL VCU User Telemetry SS_BreakLight TorqueRequestPCB Distri Dashboard AclrGPS
 VAL_TABLE_ Vt_sig_SetBreakLight 1 "TSAL ON" 0 "TSAL OFF" ;
 VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
@@ -91,6 +91,9 @@ BO_ 1537 msg_VCU_intern_InvStates: 8 VCU
  SG_ sig_VCUintern_StateInv1 : 0|8@1+ (1,0) [0|255] ""  Dashboard
 
 BO_ 1536 msg_VCU_intern_States: 8 VCU
+ SG_ sig_VCUintern_TorqueToZero : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ sig_VCUintern_BrakeThrotleFAULT : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ sig_VCUintern_Above5KW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ sig_VCUintern_Recuperating : 21|1@1+ (1,0) [0|1] ""  Dashboard
@@ -331,14 +334,14 @@ BO_ 1286 msg_DistriStatus1: 8 Distri
  SG_ sig_Distri_F1_VCU_OK : 0|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
- SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  PedalIntegratedCircuit
+ SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  TorqueRequestPCB
 
-BO_ 656 msg_PIC_DriveValue: 3 PedalIntegratedCircuit
- SG_ sig_PIC_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_PIC_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_PIC_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ sig_PIC_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
- SG_ sig_PIC_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
+BO_ 656 msg_TRP_DriveValue: 3 TorqueRequestPCB
+ SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sig_TRP_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
+ SG_ sig_TRP_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
  SG_ sig_WaterFlow1 : 0|8@1+ (1,0) [0|255] ""  VCU
@@ -346,10 +349,10 @@ BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
 BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ sig_VCU_Alive_Signal : 0|1@1+ (1,0) [0|0] ""  Dashboard
 
-BO_ 657 msg_PIC_TorqueAndBreak: 5 PedalIntegratedCircuit
- SG_ sig_PIC_BreakPressure2 : 32|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_PIC_BreakPressure1 : 24|8@1+ (1,0) [0|255] ""  VCU
- SG_ sig_PIC_BreakPedal1 : 16|8@1+ (1,0) [0|255] ""  VCU
+BO_ 657 msg_PIC_TorqueAndBreak: 5 TorqueRequestPCB
+ SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TRP_BreakPedal1 : 16|8@1+ (1,0) [0|255] ""  VCU
  SG_ sig_TorquePedal2 : 8|8@1+ (1,0) [0|255] ""  VCU
  SG_ sig_TorquePedal1 : 0|8@1+ (1,0) [0|255] ""  VCU
 
@@ -419,12 +422,13 @@ CM_ BU_ SS_DRR "Smart Sensor Deflection Rear Right";
 CM_ BU_ SS_DRL "SmartSensor Deflection Rear Left";
 CM_ BU_ User "extern developer eg. with CANoe";
 CM_ BU_ SS_BreakLight "SmartSensor Brake Light";
-CM_ BU_ PedalIntegratedCircuit "Pedalerie Platine (IC - integrated circuit)";
+CM_ BU_ TorqueRequestPCB "Pedalerie Platine (IC - integrated circuit)";
 CM_ BU_ Distri "current distribution board. contains resatable e-fuses";
 CM_ BU_ AclrGPS "ST Box, gyro and GPS sensors";
 CM_ SG_ 1286 sig_Distri_F6_DCDCp2_OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses
 ";
 CM_ SG_ 1286 sig_Distri_F5_DCDCp1OK "ein DCDC gesichert von 2 parallelen Stromkreisen -> 2 Fueses";
+CM_ BO_ 656 "Message from TorqueRequestPCB";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "";
 VAL_ 561 sig_VCU_Alive_Signal 1 "ONLINE" 0 "OFFLINE" ;
