@@ -39,6 +39,9 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 565 msg_UserToVCU_Commands: 8 User
+ SG_ sig_User_VCUejectUSB : 0|1@1+ (1,0) [0|1] ""  VCU
+
 BO_ 1544 msg_VCUAMS_AvgSumVoltTemp: 8 VCU
  SG_ sig_AMS_SumVoltage : 32|16@1+ (0.01,0) [0|655.35] ""  Dashboard
  SG_ sig_AMS_AvgTemp : 16|16@1+ (0.001,0) [0|65.535] ""  Dashboard
