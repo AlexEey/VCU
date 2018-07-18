@@ -41,9 +41,9 @@ VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 BO_ 565 msg_UserToVCU_Commands: 8 User
  SG_ sig_User_VCUejectUSB : 0|1@1+ (1,0) [0|1] ""  VCU
- 
+
 BO_ 1541 msg_VCUAMS_Status: 1 VCU
- SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] "" Dashboard
+ SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ error_U_detected : 1|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ error_T_detected : 0|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ Connection2Slaves : 2|1@0+ (1,0) [0|0] ""  Dashboard
@@ -51,10 +51,10 @@ BO_ 1541 msg_VCUAMS_Status: 1 VCU
  SG_ Ladevorgang_aktiv : 4|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ Balancing_aktiv : 5|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ Global_Enable_Flag : 7|1@0+ (1,0) [0|1] ""  Dashboard
- 
+
 BO_ 1542 msg_VCUAMS_Alive: 1 VCU
  SG_ AMS_Alive : 0|1@0+ (1,0) [0|0] ""  Dashboard
- 
+
 BO_ 1543 msg_VCUAMS_MinMaxVoltage: 8 VCU
  SG_ sig_AMS_MaxVoltage_CNT : 63|8@0+ (1,0) [0|255] ""  Dashboard
  SG_ sig_AMS_MaxVoltage_ID : 55|8@0+ (1,0) [0|255] ""  Dashboard
@@ -62,20 +62,20 @@ BO_ 1543 msg_VCUAMS_MinMaxVoltage: 8 VCU
  SG_ sig_AMS_MinVoltage_ID : 23|8@0+ (1,0) [0|255] ""  Dashboard
  SG_ sig_AMS_MaxVoltage : 39|16@0+ (0.0001,0) [0|6.5535] "V"  Dashboard
  SG_ sig_AMS_MinVoltage : 7|16@0+ (0.0001,0) [0|6.5535] "V"  Dashboard
- 
+
 BO_ 1544 msg_VCUAMS_MinMaxTemp: 8 VCU
- SG_ sig_AMS_MaxTemp_CNT : 56|8@1+ (1,0) [0|255] ""  Dashboard
- SG_ sig_AMS_MaxTemp_ID : 48|8@1+ (1,0) [0|255] ""  Dashboard
- SG_ sig_AMS_MinTemp_CNT : 24|8@1+ (1,0) [0|255] ""  Dashboard
- SG_ sig_AMS_MinTemp_ID : 16|8@1+ (1,0) [0|255] ""  Dashboard
- SG_ sig_AMS_MinTemp : 0|16@1+ (0.001,0) [0|65.535] ""  Dashboard
- SG_ sig_AMS_MaxTemp : 32|16@1+ (0.001,0) [0|65.535] ""  Dashboard
- 
+ SG_ sig_AMS_MaxTemp_CNT : 63|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMS_MaxTemp_ID : 55|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMS_MinTemp_CNT : 31|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMS_MinTemp_ID : 23|8@0+ (1,0) [0|255] ""  VCU
+ SG_ sig_AMS_MinTemp : 7|16@0+ (0.01,0) [0|65.535] ""  VCU
+ SG_ sig_AMS_MaxTemp : 39|16@0+ (0.01,0) [0|65.535] ""  VCU
+
 BO_ 1545 msg_VCUAMS_AvgSumVoltTemp: 8 VCU
- SG_ sig_AMS_SumVoltage : 32|16@1+ (0.01,0) [0|655.35] ""  Dashboard
- SG_ sig_AMS_AvgTemp : 16|16@1+ (0.001,0) [0|65.535] ""  Dashboard
- SG_ sig_AMK_AvgVoltage : 0|16@1+ (0.0001,0) [0|6.5535] ""  Dashboard
- 
+ SG_ sig_AMS_SumVoltage : 39|32@0+ (0.0001,0) [0|429496.7295] ""  VCU
+ SG_ sig_AMS_AvgTemp : 23|16@0+ (0.01,0) [0|65.535] ""  VCU
+ SG_ sig_AMS_AvgVoltage : 7|16@0+ (0.0001,0) [0|6.5535] ""  VCU
+
 BO_ 1546 msg_VCUAMS_CPU_IO_STATES: 1 VCU
  SG_ PI_TractiveSystem_detected : 1|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ PI_AMS_ERROR_MEMORY : 6|1@1+ (1,0) [0|1] ""  Dashboard
@@ -85,13 +85,13 @@ BO_ 1546 msg_VCUAMS_CPU_IO_STATES: 1 VCU
  SG_ PI_P_ABOVE_5KW : 4|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ PI_HW_AIR_OFF : 5|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ PI_IMD_ERROR_MEMORY : 7|1@0+ (1,0) [0|0] ""  Dashboard
- 
-BO_ 1547 msg_AMS_Debug: 8 VCU
- SG_ AMS_error : 4|1@1+ (1,0) [0|0] "" Dashboard
- SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] "" Dashboard
- SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] "" Dashboard
- SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] "" Dashboard
- 
+
+BO_ 1547 msg_VCUAMS_Debug: 8 VCU
+ SG_ AMS_error : 4|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] ""  Dashboard
+
 BO_ 1548 msg_VCUIVT_Result_I: 6 VCU
  SG_ sig_IVT_Result_I_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_I_OCS : 12|1@0+ (1,0) [0|0] ""  Dashboard
@@ -100,7 +100,7 @@ BO_ 1548 msg_VCUIVT_Result_I: 6 VCU
  SG_ sig_IVT_ID_Result_I : 7|8@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_MsgCount_Result_I : 11|4@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_I : 23|32@0- (1,0) [0|0] "mA"  Dashboard
- 
+
 BO_ 1549 msg_VCUIVT_Result_U1: 6 VCU
  SG_ sig_IVT_Result_U1_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_U1_Measure_Err : 14|1@0+ (1,0) [0|0] ""  Dashboard
@@ -109,7 +109,7 @@ BO_ 1549 msg_VCUIVT_Result_U1: 6 VCU
  SG_ sig_IVT_ID_Result_U1 : 7|8@0+ (1,0) [1|1] ""  Dashboard
  SG_ sig_IVT_Result_U1 : 23|32@0- (1,0) [0|0] "mV"  Dashboard
  SG_ sig_IVT_MsgCount_Result_U1 : 11|4@0+ (1,0) [0|0] ""  Dashboard
- 
+
 BO_ 1550 msg_VCUIVT_Result_U2: 6 VCU
  SG_ sig_IVT_Result_U2_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_U2_OCS : 12|1@0+ (1,0) [0|0] ""  Dashboard
@@ -127,7 +127,7 @@ BO_ 1551 msg_VCUIVT_Result_U3: 6 VCU
  SG_ sig_IVT_ID_Result_U3 : 7|8@0+ (1,0) [3|3] ""  Dashboard
  SG_ sig_IVT_Result_U3 : 23|32@0- (1,0) [0|0] "mV"  Dashboard
  SG_ sig_IVT_MsgCount_Result_U3 : 11|4@0+ (1,0) [0|0] ""  Dashboard
- 
+
 BO_ 1552 msg_VCUIVT_Result_T: 6 VCU
  SG_ sig_IVT_Result_T_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_T_OCS : 12|1@0+ (1,0) [0|0] ""  Dashboard
@@ -136,7 +136,7 @@ BO_ 1552 msg_VCUIVT_Result_T: 6 VCU
  SG_ sig_IVT_ID_Result_T : 7|8@0+ (1,0) [4|4] ""  Dashboard
  SG_ sig_IVT_Result_T : 23|32@0- (1,0) [-32767|32768] "degC"  Dashboard
  SG_ sig_IVT_MsgCount_Result_T : 11|4@0+ (1,0) [0|0] ""  Dashboard
- 
+
 BO_ 1553 msg_VCUIVT_Result_W: 6 VCU
  SG_ sig_IVT_Result_W_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_W_OCS : 12|1@0+ (1,0) [0|0] ""  Dashboard
@@ -144,7 +144,7 @@ BO_ 1553 msg_VCUIVT_Result_W: 6 VCU
  SG_ sig_IVT_Result_W_Channel_Error : 13|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_W : 23|32@0- (1,0) [0|0] "W"  Dashboard
  SG_ sig_IVT_MsgCount_Result_W : 11|4@0+ (1,0) [0|0] ""  Dashboard
- SG_ sig_IVT_ID_Result_W : 7|8@0+ (1,0) [5|5] ""  Dashboard 
+ SG_ sig_IVT_ID_Result_W : 7|8@0+ (1,0) [5|5] ""  Dashboard
 
 BO_ 1554 msg_VCUIVT_Result_As: 6 VCU
  SG_ sig_IVT_Result_As_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
@@ -154,7 +154,7 @@ BO_ 1554 msg_VCUIVT_Result_As: 6 VCU
  SG_ sig_IVT_Result_As : 23|32@0- (1,0) [0|0] "As"  Dashboard
  SG_ sig_IVT_MsgCount_Result_As : 11|4@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_ID_Result_As : 7|8@0+ (1,0) [6|6] ""  Dashboard
- 
+
 BO_ 1555 msg_VCUIVT_Result_Wh: 6 VCU
  SG_ sig_IVT_Result_Wh_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_Result_Wh_OCS : 12|1@0+ (1,0) [0|0] ""  Dashboard
@@ -163,7 +163,7 @@ BO_ 1555 msg_VCUIVT_Result_Wh: 6 VCU
  SG_ sig_IVT_Result_Wh : 23|32@0- (1,0) [0|0] "Wh"  Dashboard
  SG_ sig_IVT_MsgCount_Result_Wh : 11|4@0+ (1,0) [0|0] ""  Dashboard
  SG_ sig_IVT_ID_Result_Wh : 7|8@0+ (1,0) [7|7] ""  Dashboard
- 
+
 BO_ 1539 msg_VCU_TorqueVectoring: 8 VCU
  SG_ sig_VCU_PowerLimitToTV : 8|8@1+ (1,0) [0|255] ""  Dashboard
  SG_ sig_VCU_TV_onlyRear : 17|1@1+ (1,0) [0|1] ""  Dashboard
