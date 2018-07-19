@@ -38,10 +38,14 @@ VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
 BO_ 531 msg_AMS_Debug: 8 AMS
- SG_ AMS_error : 4|1@1+ (1,0) [0|0] "" VCU
- SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] "" VCU
- SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] "" VCU
- SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] "" VCU
+ SG_ sig_AMS_OverTemp : 10|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_UnderTemp : 11|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_UnderVoltage : 9|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_OverVoltage : 8|1@1+ (1,0) [0|1] "" VCU
+ SG_ AMS_error : 4|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 520 msg_AMS_AvgSumVoltageTemp: 8 AMS
  SG_ sig_AMS_SumVoltage : 39|32@0+ (0.0001,0) [0|429496.7295] ""  VCU
@@ -431,7 +435,7 @@ BO_ 1281 msg_AMS_Temps: 7 AMS
  SG_ Multiplexor_Temp M : 7|8@0+ (1,0) [0|35] ""  VCU
 
 BO_ 512 msg_AMS_Status: 1 AMS
- SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] "" VCU
+ SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] ""  VCU
  SG_ error_U_detected : 1|1@0+ (1,0) [0|0] ""  VCU
  SG_ error_T_detected : 0|1@0+ (1,0) [0|0] ""  VCU
  SG_ Connection2Slaves : 2|1@0+ (1,0) [0|0] ""  VCU

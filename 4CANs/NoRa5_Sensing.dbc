@@ -39,6 +39,16 @@ VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
+BO_ 1538 msg_VCU_Power: 8 VCU
+ SG_ sig_VCU_ElecPowerInv4 : 56|8@1- (1,0) [-128|127] "" Dashboard
+ SG_ sig_VCU_ElecPowerInv3 : 48|8@1- (1,0) [-128|127] "" Dashboard
+ SG_ sig_VCU_ElecPowerInv2 : 40|8@1- (1,0) [-128|127] "" Dashboard
+ SG_ sig_VCU_ElecPowerInv1 : 32|8@1- (1,0) [-128|127] "" Dashboard
+ SG_ sig_VCU_TVMechPowerInv4 : 24|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_TVMechPowerInv3 : 16|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_TVMechPowerInv2 : 8|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_TVMechPowerInv1 : 0|8@1- (1,0) [-128|127] ""  Dashboard
+
 BO_ 565 msg_UserToVCU_Commands: 8 User
  SG_ sig_User_VCUejectUSB : 0|1@1+ (1,0) [0|1] ""  VCU
 
@@ -87,10 +97,14 @@ BO_ 1546 msg_VCUAMS_CPU_IO_STATES: 1 VCU
  SG_ PI_IMD_ERROR_MEMORY : 7|1@0+ (1,0) [0|0] ""  Dashboard
 
 BO_ 1547 msg_VCUAMS_Debug: 8 VCU
- SG_ AMS_error : 4|1@1+ (1,0) [0|0] ""  Dashboard
- SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] ""  Dashboard
- SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] ""  Dashboard
- SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_AMS_OverTemp : 10|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_UnderTemp : 11|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_UnderVoltage : 9|1@0+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_OverVoltage : 8|1@1+ (1,0) [0|1] "" VCU
+ SG_ AMS_error : 4|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] ""  VCU
+ SG_ PI_CLR_AMS_ERROR : 1|1@1+ (1,0) [0|0] ""  VCU
 
 BO_ 1548 msg_VCUIVT_Result_I: 6 VCU
  SG_ sig_IVT_Result_I_System_Error : 15|1@0+ (1,0) [0|0] ""  Dashboard
@@ -177,11 +191,11 @@ BO_ 1537 msg_VCU_intern_InvStates: 8 VCU
  SG_ sig_VCUintern_StateInv1 : 0|8@1+ (1,0) [0|255] ""  Dashboard
 
 BO_ 1536 msg_VCU_intern_States: 8 VCU
- SG_ sig_VCUintern_TorqueToZero : 26|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ sig_VCUintern_BrakeThrotleFAULT : 25|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ sig_VCUintern_Above5KW : 24|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sig_VCUintern_TorqueToZero : 26|1@1+ (1,0) [0|1] "" Dashboard
+ SG_ sig_VCUintern_BrakeThrotleFAULT : 25|1@1+ (1,0) [0|1] "" Dashboard
+ SG_ sig_VCUintern_Above5KW : 24|1@1+ (1,0) [0|0] "" Dashboard
+ SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] "" Dashboard
+ SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] "" Dashboard
  SG_ sig_VCUintern_Recuperating : 21|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_RecuEnabled : 20|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_HydraulicBrakeON : 18|1@1+ (1,0) [0|1] ""  Dashboard
@@ -385,9 +399,9 @@ BO_ 1024 msg_VCU_calibrateAllSS: 1 VCU
  SG_ sig_VCU_calibrateAllSS : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
 
 BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
- SG_ sig_Dash_RecuperationOn : 4|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ sig_Dash_SlipControlOn : 3|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ sig_Dash_TractiveSystemOn : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sig_Dash_RecuperationOn : 4|1@1+ (1,0) [0|1] "" VCU
+ SG_ sig_Dash_SlipControlOn : 3|1@1+ (1,0) [0|0] "" VCU
+ SG_ sig_Dash_TractiveSystemOn : 2|1@1+ (1,0) [0|0] "" VCU
  SG_ sig_Dash_RedButton : 1|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_Dash_GreenButton : 0|1@1+ (1,0) [0|0] ""  VCU
@@ -423,11 +437,11 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  TorqueRequestPCB
 
 BO_ 656 msg_TRP_DriveValue: 5 TorqueRequestPCB
- SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] "bar" Vector__XXX
- SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] "bar" Vector__XXX
- SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] "bar" VCU
+ SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] "bar" VCU
+ SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] "" VCU
+ SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] "" VCU
+ SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" VCU
  SG_ sig_TRP_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_TRP_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
 
