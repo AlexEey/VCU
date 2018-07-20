@@ -52,7 +52,8 @@ BO_ 1538 msg_VCU_Power: 8 VCU
 BO_ 565 msg_UserToVCU_Commands: 8 User
  SG_ sig_User_VCUejectUSB : 0|1@1+ (1,0) [0|1] ""  VCU
 
-BO_ 1541 msg_VCUAMS_Status: 1 VCU
+BO_ 1541 msg_VCUAMS_Status: 2 VCU
+ SG_ error_I_detected : 8|1@1+ (1,0) [0|1] "" Dashboard
  SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ error_U_detected : 1|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ error_T_detected : 0|1@0+ (1,0) [0|0] ""  Dashboard
