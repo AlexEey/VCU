@@ -38,51 +38,52 @@ VAL_TABLE_ Vt_sig_SetBreakLight 1 "TSAL ON" 0 "TSAL OFF" ;
 VAL_TABLE_ Vt_sig_SetRTDS 1 "RTDS ON" 0 "RTDS OFF" ;
 VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
+
 BO_ 772 GNSS_05_Gyro: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] "" Telemetry
- SG_ Gyro_Z : 48|16@1- (0.00875,0) [-286.72|286.71125] "" Telemetry
- SG_ Gyro_Y : 32|16@1- (0.00875,0) [-286.72|286.71125] "" Telemetry
- SG_ Gyro_X : 16|16@1- (0.00875,0) [-286.72|286.71125] "rad/s" Telemetry
+ SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ Gyro_Z : 48|16@1- (0.00875,0) [-286.72|286.71125] ""  Telemetry
+ SG_ Gyro_Y : 32|16@1- (0.00875,0) [-286.72|286.71125] ""  Telemetry
+ SG_ Gyro_X : 16|16@1- (0.00875,0) [-286.72|286.71125] "rad/s"  Telemetry
 
 BO_ 771 GNSS_04_Acceleration: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] "" Telemetry
- SG_ Acc_Z : 48|16@1- (0.061,0) [-1998.848|1998.787] "mG" Telemetry
- SG_ Acc_Y : 32|16@1- (0.061,0) [-1998.848|1998.787] "mG" Telemetry
- SG_ Acc_X : 16|16@1- (0.061,0) [-1998.848|1998.787] "mG" Telemetry
+ SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ Acc_Z : 48|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
+ SG_ Acc_Y : 32|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
+ SG_ Acc_X : 16|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
 
 BO_ 770 GNSS_03_Precisions: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] "" Telemetry
- SG_ HDOP : 20|9@1+ (1,0) [0|0] "" Telemetry
- SG_ GDOP : 2|9@1+ (1,0) [0|0] "" Telemetry
- SG_ PDOP : 11|9@1+ (1,0) [0|0] "" Telemetry
- SG_ VDOP : 29|9@1+ (1,0) [0|0] "" Telemetry
- SG_ Velocity : 38|6@1+ (1,0) [0|0] "" Telemetry
- SG_ orientation : 44|6@1+ (1,0) [0|0] "" Telemetry
- SG_ horizontal : 50|8@1+ (1,0) [0|255] "" Telemetry
- SG_ vertical : 58|6@1+ (1,0) [0|0] "" Telemetry
+ SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ HDOP : 20|9@1+ (1,0) [0|0] ""  Telemetry
+ SG_ GDOP : 2|9@1+ (1,0) [0|0] ""  Telemetry
+ SG_ PDOP : 11|9@1+ (1,0) [0|0] ""  Telemetry
+ SG_ VDOP : 29|9@1+ (1,0) [0|0] ""  Telemetry
+ SG_ Velocity : 38|6@1+ (1,0) [0|0] ""  Telemetry
+ SG_ orientation : 44|6@1+ (1,0) [0|0] ""  Telemetry
+ SG_ horizontal : 50|8@1+ (1,0) [0|255] ""  Telemetry
+ SG_ vertical : 58|6@1+ (1,0) [0|0] ""  Telemetry
 
 BO_ 769 GNSS_02_Speeds: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] "" Telemetry
- SG_ latency : 2|10@1+ (1,0) [0|0] "" Telemetry
- SG_ course_angle : 12|12@1+ (1,0) [0|0] "" Telemetry
- SG_ _2D_Base_Speed : 24|9@1- (1,0) [0|0] "" Telemetry
- SG_ north_speed : 33|10@1- (1,0) [-512|511] "m/sec" Telemetry
- SG_ east_speed : 43|10@1- (1,0) [-512|511] "m/sec" Telemetry
- SG_ vertical_speed : 53|10@1- (1,0) [-512|511] "m/sec" Telemetry
+ SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ latency : 2|10@1+ (1,0) [0|0] ""  Telemetry
+ SG_ course_angle : 12|12@1+ (1,0) [0|0] ""  Telemetry
+ SG_ _2D_Base_Speed : 24|9@1- (1,0) [0|0] ""  Telemetry
+ SG_ north_speed : 33|10@1- (1,0) [-512|511] "m/sec"  Telemetry
+ SG_ east_speed : 43|10@1- (1,0) [-512|511] "m/sec"  Telemetry
+ SG_ vertical_speed : 53|10@1- (1,0) [-512|511] "m/sec"  Telemetry
 
 BO_ 768 GNSS_01_LatiLongi: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] "" Telemetry
- SG_ Latidude_direction : 29|1@1+ (1,0) [0|1] "" Telemetry
- SG_ Latidude : 2|27@1+ (1,0) [0|268435455] "" Telemetry
- SG_ Longitude_direction : 58|1@1+ (1,0) [0|1] "" Telemetry
- SG_ Longitude : 30|28@1+ (1,0) [0|268435455] "" Telemetry
- SG_ Fix_Status : 59|2@1+ (1,0) [0|3] "" Telemetry
+ SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ Latidude_direction : 29|1@1+ (1,0) [0|1] ""  Telemetry
+ SG_ Latidude : 2|27@1+ (1,0) [0|268435455] ""  Telemetry
+ SG_ Longitude_direction : 58|1@1+ (1,0) [0|1] ""  Telemetry
+ SG_ Longitude : 30|28@1+ (1,0) [0|268435455] ""  Telemetry
+ SG_ Fix_Status : 59|2@1+ (1,0) [0|3] ""  Telemetry
 
 BO_ 1538 msg_VCU_Power: 8 VCU
- SG_ sig_VCU_ElecPowerInv4 : 56|8@1- (1,0) [-128|127] "" Dashboard
- SG_ sig_VCU_ElecPowerInv3 : 48|8@1- (1,0) [-128|127] "" Dashboard
- SG_ sig_VCU_ElecPowerInv2 : 40|8@1- (1,0) [-128|127] "" Dashboard
- SG_ sig_VCU_ElecPowerInv1 : 32|8@1- (1,0) [-128|127] "" Dashboard
+ SG_ sig_VCU_ElecPowerInv4 : 56|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_ElecPowerInv3 : 48|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_ElecPowerInv2 : 40|8@1- (1,0) [-128|127] ""  Dashboard
+ SG_ sig_VCU_ElecPowerInv1 : 32|8@1- (1,0) [-128|127] ""  Dashboard
  SG_ sig_VCU_TVMechPowerInv4 : 24|8@1- (1,0) [-128|127] ""  Dashboard
  SG_ sig_VCU_TVMechPowerInv3 : 16|8@1- (1,0) [-128|127] ""  Dashboard
  SG_ sig_VCU_TVMechPowerInv2 : 8|8@1- (1,0) [-128|127] ""  Dashboard
@@ -92,7 +93,7 @@ BO_ 565 msg_UserToVCU_Commands: 8 User
  SG_ sig_User_VCUejectUSB : 0|1@1+ (1,0) [0|1] ""  VCU
 
 BO_ 1541 msg_VCUAMS_Status: 2 VCU
- SG_ error_I_detected : 8|1@1+ (1,0) [0|1] "" Dashboard
+ SG_ error_I_detected : 8|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ VCU_Alive_detected : 6|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ error_U_detected : 1|1@0+ (1,0) [0|0] ""  Dashboard
  SG_ error_T_detected : 0|1@0+ (1,0) [0|0] ""  Dashboard
@@ -137,10 +138,10 @@ BO_ 1546 msg_VCUAMS_CPU_IO_STATES: 1 VCU
  SG_ PI_IMD_ERROR_MEMORY : 7|1@0+ (1,0) [0|0] ""  Dashboard
 
 BO_ 1547 msg_VCUAMS_Debug: 8 VCU
- SG_ sig_AMS_OverTemp : 10|1@0+ (1,0) [0|1] "" VCU
- SG_ sig_AMS_UnderTemp : 11|1@0+ (1,0) [0|1] "" VCU
- SG_ sig_AMS_UnderVoltage : 9|1@0+ (1,0) [0|1] "" VCU
- SG_ sig_AMS_OverVoltage : 8|1@1+ (1,0) [0|1] "" VCU
+ SG_ sig_AMS_OverTemp : 10|1@0+ (1,0) [0|1] ""  VCU
+ SG_ sig_AMS_UnderTemp : 11|1@0+ (1,0) [0|1] ""  VCU
+ SG_ sig_AMS_UnderVoltage : 9|1@0+ (1,0) [0|1] ""  VCU
+ SG_ sig_AMS_OverVoltage : 8|1@1+ (1,0) [0|1] ""  VCU
  SG_ AMS_error : 4|1@1+ (1,0) [0|0] ""  VCU
  SG_ PI_AIRSENSING : 2|1@1+ (1,0) [0|0] ""  VCU
  SG_ PI_CLR_IMD_ERROR : 0|1@1+ (1,0) [0|0] ""  VCU
@@ -231,11 +232,11 @@ BO_ 1537 msg_VCU_intern_InvStates: 8 VCU
  SG_ sig_VCUintern_StateInv1 : 0|8@1+ (1,0) [0|255] ""  Dashboard
 
 BO_ 1536 msg_VCU_intern_States: 8 VCU
- SG_ sig_VCUintern_TorqueToZero : 26|1@1+ (1,0) [0|1] "" Dashboard
- SG_ sig_VCUintern_BrakeThrotleFAULT : 25|1@1+ (1,0) [0|1] "" Dashboard
- SG_ sig_VCUintern_Above5KW : 24|1@1+ (1,0) [0|0] "" Dashboard
- SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] "" Dashboard
- SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] "" Dashboard
+ SG_ sig_VCUintern_TorqueToZero : 26|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_BrakeThrotleFAULT : 25|1@1+ (1,0) [0|1] ""  Dashboard
+ SG_ sig_VCUintern_Above5KW : 24|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_VCUintern_InvSysApproval : 23|1@1+ (1,0) [0|0] ""  Dashboard
+ SG_ sig_VCUintern_AMSalive : 22|1@1+ (1,0) [0|0] ""  Dashboard
  SG_ sig_VCUintern_Recuperating : 21|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_RecuEnabled : 20|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCUintern_HydraulicBrakeON : 18|1@1+ (1,0) [0|1] ""  Dashboard
@@ -439,9 +440,9 @@ BO_ 1024 msg_VCU_calibrateAllSS: 1 VCU
  SG_ sig_VCU_calibrateAllSS : 0|1@1+ (1,0) [0|0] ""  SS_WaterTemperature4,SS_WaterTemperature3,SS_WaterTemperature2,SS_WaterTemperature1,SS_WaterPump2,SS_WaterPump1,SS_WaterFlow1,SS_SteeringAngle,SS_RTDS,SS_DFR,SS_DFL,SS_DRR,SS_DRL,SS_BreakLight
 
 BO_ 896 msg_Dash_Commands2VCU: 2 Dashboard
- SG_ sig_Dash_RecuperationOn : 4|1@1+ (1,0) [0|1] "" VCU
- SG_ sig_Dash_SlipControlOn : 3|1@1+ (1,0) [0|0] "" VCU
- SG_ sig_Dash_TractiveSystemOn : 2|1@1+ (1,0) [0|0] "" VCU
+ SG_ sig_Dash_RecuperationOn : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ sig_Dash_SlipControlOn : 3|1@1+ (1,0) [0|0] ""  VCU
+ SG_ sig_Dash_TractiveSystemOn : 2|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Dash_RedButton : 1|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_Dash_TVoption : 8|8@1- (1,0) [0|0] ""  VCU
  SG_ sig_Dash_GreenButton : 0|1@1+ (1,0) [0|0] ""  VCU
@@ -477,11 +478,11 @@ BO_ 563 msg_VCU_cmd_PICoptions: 1 VCU
  SG_ sig_VCU_cmdPICverbose : 0|1@1+ (1,0) [0|0] ""  TorqueRequestPCB
 
 BO_ 656 msg_TRP_DriveValue: 5 TorqueRequestPCB
- SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] "bar" VCU
- SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] "bar" VCU
- SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] "" VCU
- SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] "" VCU
- SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] "" VCU
+ SG_ sig_TRP_BreakPressure2 : 32|8@1+ (1,0) [0|255] "bar"  VCU
+ SG_ sig_TRP_BreakPressure1 : 24|8@1+ (1,0) [0|255] "bar"  VCU
+ SG_ sig_TRP_breaking : 8|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TRP_acceleration : 0|8@1+ (1,0) [0|255] ""  VCU
+ SG_ sig_TRP_RealBrakeActive : 18|1@1+ (1,0) [0|0] ""  VCU
  SG_ sig_TRP_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_TRP_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
 
@@ -516,7 +517,7 @@ BO_ 851 msg_SS_Deflection_RR: 2 SS_DRR
  SG_ sig_DeflectionRearRight : 0|16@1- (1,0) [-32768|32767] ""  VCU
 
 BO_ 852 msg_SS_SteeringAngle: 2 SS_SteeringAngle
- SG_ sig_SteeringAngle : 0|16@1- (0.00549333170567949,0) [-180.005493331706|180] ""  VCU
+ SG_ sig_SteeringAngle : 0|16@1- (0.1,0) [-3276.8|3276.7] ""  VCU
 
 BO_ 864 msg_SS_WaterTemp1: 1 SS_WaterTemperature1
  SG_ sig_TemperatureWater1 : 0|8@1+ (1,0) [0|255] ""  VCU
