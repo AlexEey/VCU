@@ -220,6 +220,10 @@ BO_ 1555 msg_VCUIVT_Result_Wh: 6 VCU
  SG_ sig_IVT_ID_Result_Wh : 7|8@0+ (1,0) [7|7] ""  Dashboard
 
 BO_ 1539 msg_VCU_TorqueVectoring: 8 VCU
+ SG_ sig_VCU_TV_TorqueRR : 48|8@1- (100,0) [-12800|12700] "" Vector__XXX
+ SG_ sig_VCU_TV_TorqueRL : 40|8@1- (100,0) [-12800|12700] "" Vector__XXX
+ SG_ sig_VCU_TV_TorqueFR : 32|8@1- (100,0) [-12800|12700] "" Vector__XXX
+ SG_ sig_VCU_TV_TorqueFL : 24|8@1- (100,0) [-12800|12700] "" Vector__XXX
  SG_ sig_VCU_PowerLimitToTV : 8|8@1+ (1,0) [0|255] ""  Dashboard
  SG_ sig_VCU_TV_onlyRear : 17|1@1+ (1,0) [0|1] ""  Dashboard
  SG_ sig_VCU_TV_onlyFront : 16|1@1+ (1,0) [0|1] ""  Dashboard
