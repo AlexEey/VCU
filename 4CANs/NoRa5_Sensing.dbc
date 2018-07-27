@@ -40,19 +40,19 @@ VAL_TABLE_ AliveSignal 1 "ONLINE" 0 "OFFLINE" ;
 
 
 BO_ 772 GNSS_05_Gyro: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ NB_of_package_05 : 0|2@1+ (1,0) [0|3] ""  Telemetry
  SG_ Gyro_Z : 48|16@1- (0.00875,0) [-286.72|286.71125] ""  Telemetry
  SG_ Gyro_Y : 32|16@1- (0.00875,0) [-286.72|286.71125] ""  Telemetry
  SG_ Gyro_X : 16|16@1- (0.00875,0) [-286.72|286.71125] "rad/s"  Telemetry
 
 BO_ 771 GNSS_04_Acceleration: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ NB_of_package_04 : 0|2@1+ (1,0) [0|3] ""  Telemetry
  SG_ Acc_Z : 48|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
  SG_ Acc_Y : 32|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
  SG_ Acc_X : 16|16@1- (0.061,0) [-1998.848|1998.787] "mG"  Telemetry
 
 BO_ 770 GNSS_03_Precisions: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ NB_of_package_03 : 0|2@1+ (1,0) [0|3] ""  Telemetry
  SG_ HDOP : 20|9@1+ (1,0) [0|0] ""  Telemetry
  SG_ GDOP : 2|9@1+ (1,0) [0|0] ""  Telemetry
  SG_ PDOP : 11|9@1+ (1,0) [0|0] ""  Telemetry
@@ -63,7 +63,7 @@ BO_ 770 GNSS_03_Precisions: 8 AclrGPS
  SG_ vertical : 58|6@1+ (1,0) [0|0] ""  Telemetry
 
 BO_ 769 GNSS_02_Speeds: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ NB_of_package_02 : 0|2@1+ (1,0) [0|3] ""  Telemetry
  SG_ latency : 2|10@1+ (1,0) [0|0] ""  Telemetry
  SG_ course_angle : 12|12@1+ (1,0) [0|0] ""  Telemetry
  SG_ _2D_Base_Speed : 24|9@1- (1,0) [0|0] ""  Telemetry
@@ -72,7 +72,7 @@ BO_ 769 GNSS_02_Speeds: 8 AclrGPS
  SG_ vertical_speed : 53|10@1- (1,0) [-512|511] "m/sec"  Telemetry
 
 BO_ 768 GNSS_01_LatiLongi: 8 AclrGPS
- SG_ NB_of_package : 0|2@1+ (1,0) [0|3] ""  Telemetry
+ SG_ NB_of_package_01 : 0|2@1+ (1,0) [0|3] ""  Telemetry
  SG_ Latidude_direction : 29|1@1+ (1,0) [0|1] ""  Telemetry
  SG_ Latidude : 2|27@1+ (1,0) [0|268435455] ""  Telemetry
  SG_ Longitude_direction : 58|1@1+ (1,0) [0|1] ""  Telemetry
@@ -486,8 +486,8 @@ BO_ 656 msg_TRP_DriveValue: 5 TorqueRequestPCB
  SG_ sig_TRP_TorquePlausible : 16|1@1+ (1,0) [0|1] ""  VCU
  SG_ sig_TRP_BreakPlausible : 17|1@1+ (1,0) [0|0] ""  VCU
 
-BO_ 863 msg_SS_WaterFlow1: 1 SS_WaterFlow1
- SG_ sig_WaterFlow1 : 0|8@1+ (1,0) [0|255] ""  VCU
+BO_ 863 msg_SS_WaterFlow1: 2 SS_WaterFlow1
+ SG_ sig_WaterFlow1 : 0|16@1+ (1,0) [0|65535] ""  VCU
 
 BO_ 561 msg_VCU_Alive: 1 VCU
  SG_ sig_VCU_Alive_Signal : 0|1@1+ (1,0) [0|0] ""  Dashboard
@@ -519,17 +519,17 @@ BO_ 851 msg_SS_Deflection_RR: 2 SS_DRR
 BO_ 852 msg_SS_SteeringAngle: 2 SS_SteeringAngle
  SG_ sig_SteeringAngle : 0|16@1- (0.1,0) [-3276.8|3276.7] ""  VCU
 
-BO_ 864 msg_SS_WaterTemp1: 1 SS_WaterTemperature1
- SG_ sig_TemperatureWater1 : 0|8@1+ (1,0) [0|255] ""  VCU
+BO_ 864 msg_SS_WaterTemp1: 2 SS_WaterTemperature1
+ SG_ sig_TemperatureWater1 : 0|16@1+ (1,0) [0|65535] ""  VCU
 
-BO_ 865 msg_SS_WaterTemp2: 1 SS_WaterTemperature2
- SG_ sig_TemperatureWater2 : 0|8@1+ (1,0) [0|255] ""  VCU
+BO_ 865 msg_SS_WaterTemp2: 2 SS_WaterTemperature2
+ SG_ sig_TemperatureWater2 : 0|16@1+ (1,0) [0|65535] ""  VCU
 
-BO_ 866 msg_SS_WaterTemp3: 1 SS_WaterTemperature3
- SG_ sig_TemperatureWater3 : 0|8@1+ (1,0) [0|255] ""  VCU
+BO_ 866 msg_SS_WaterTemp3: 2 SS_WaterTemperature3
+ SG_ sig_TemperatureWater3 : 0|16@1+ (1,0) [0|65535] ""  VCU
 
-BO_ 867 msg_SS_WaterTemp4: 1 SS_WaterTemperature4
- SG_ sig_TemperatureWater4 : 0|8@1+ (1,0) [0|255] ""  VCU
+BO_ 867 msg_SS_WaterTemp4: 2 SS_WaterTemperature4
+ SG_ sig_TemperatureWater4 : 0|16@1+ (1,0) [0|65535] ""  VCU
 
 BO_ 868 msg_SS_WaterPump1: 1 SS_WaterPump1
  SG_ sig_WaterPump1_State : 7|1@1+ (1,0) [0|0] ""  VCU
